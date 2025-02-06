@@ -103,7 +103,7 @@ SC_Single   100%    *   207
 サビまで飽きさせないために冒頭で一瞬だけラジカセ風のサビを聴かせる手法は、今の時代にとても即しているな…とぼんやり考えるのとほぼ同時に、
 『風待ちハローワールド』を思い出しました。
 
-## リサージュの風景
+## リサージュの風景 - 綿菓子かんろ
 
 <br/>
 <iframe height="324" width="100%" title="Media player" src="https://embed.music.apple.com/us/album/%E3%83%AA%E3%82%B5%E3%83%BC%E3%82%B7-%E3%83%A5%E3%81%AE%E9%A2%A8%E6%99%AF/1780288944?itscg=30200&amp;itsct=music_box_player&amp;ls=1&amp;app=music&amp;mttnsubad=1780288944&amp;theme=light" id="embedPlayer" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="border: 0px; border-radius: 12px; width: 100%; height: 324px; max-width: 660px;"></iframe>
