@@ -1,12 +1,13 @@
 ---
-title: アプリ開発
-description: 「アプリ開発」のタグが付いた記事
-permalink: "https://aSumo-1xts.github.io/aSumoranda/tags/appDev.html"
+title: Web開発
+description: 「Web開発」のタグが付いた記事
+permalink: "https://aSumo-1xts.github.io/aSumoranda/tags/webDev.html"
 prev: false
 next: false
-order: 3
+order: 4
 editLink: false
 lastUpdated: false
+hidden: true
 ---
 
 <script lang="ts" setup>
@@ -16,6 +17,6 @@ lastUpdated: false
 
 # {{ $frontmatter.description }}
 
-<span class="text-base"><PostCounter tag="appDev" /></span>件
+<span class="text-base"><PostCounter tag="webDev" /></span>件
 
-<TaggedPostList tag="appDev" />
+<TaggedPostList tag="webDev" />

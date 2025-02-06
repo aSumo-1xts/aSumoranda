@@ -7,6 +7,7 @@ next: false
 order: 1
 editLink: false
 lastUpdated: false
+hidden: true
 ---
 
 <script lang="ts" setup>

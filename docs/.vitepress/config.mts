@@ -170,6 +170,7 @@ function mySidebar(): DefaultTheme.SidebarItem[] {
         useTitleFromFrontmatter:      true,
         sortMenusByFrontmatterDate:   true,
         sortMenusOrderByDescending:   true,
+        excludeFilesByFrontmatterFieldName: "hidden",
       })
     },
     {
@@ -181,6 +182,7 @@ function mySidebar(): DefaultTheme.SidebarItem[] {
         scanStartPath:              'tags',
         useTitleFromFrontmatter:      true,
         sortMenusByFrontmatterOrder:  true,
+        excludeFilesByFrontmatterFieldName: "hidden",
       })
     },
   ]
