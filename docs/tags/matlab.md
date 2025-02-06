@@ -4,7 +4,7 @@ description: 「MATLAB」のタグが付いた記事
 permalink: "https://aSumo-1xts.github.io/aSumoranda/tags/matlab.html"
 prev: false
 next: false
-order: 8
+order: 31
 editLink: false
 lastUpdated: false
 hidden: true
