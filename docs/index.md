@@ -2,6 +2,7 @@
 layout: home
 
 title: Home
+description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 hero:
   name: "aSumoranda"
