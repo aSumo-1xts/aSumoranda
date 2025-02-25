@@ -1,6 +1,8 @@
 ---
 layout: home
 
+title: Home
+
 hero:
   name: "aSumoranda"
   tagline: "↓↓↓ Recomended Posts ↓↓↓"
