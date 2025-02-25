@@ -111,8 +111,7 @@ export default defineConfig({
       "meta",
       {
         property: "og:image",
-        content:
-          "https://github.com/aSumo-1xts/1xtelescope/blob/main/docs/public/cover01.png?raw=true",
+        content: "https://blog.1xtelescope.com/cover01.png",
       },
     ],
     ["meta", { property: "og:locale", content: "ja_JP" }],
