@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: 2025年に発見した音楽
-description: ｱｽﾓﾗﾝﾀﾞ
+description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 date: 2025-01-11
 permalink: "https://blog.1xtelescope.com/posts/music2025.html"
 prev: false

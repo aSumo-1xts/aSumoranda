@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Arduinoで理想のMIDIコントローラーを作る
-description: ｱｽﾓﾗﾝﾀﾞ
+description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 date: 2024-09-15
 permalink: "https://blog.1xtelescope.com/posts/HeartLand.html"
 prev: false

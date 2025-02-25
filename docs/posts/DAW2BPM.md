@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: ArduinoでDAWからBPMを取得する
-description: ｱｽﾓﾗﾝﾀﾞ
+description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 date: 2024-08-12
 permalink: "https://blog.1xtelescope.com/posts/DAW2BPM.html"
 prev: false
