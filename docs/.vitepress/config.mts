@@ -82,6 +82,10 @@ export default defineConfig({
         timeStyle: "short",
       },
     },
+
+    search: {
+      provider: 'local'
+    }
   },
 
   appearance: "force-dark", // ダークモードのみ
