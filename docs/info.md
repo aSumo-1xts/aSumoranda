@@ -23,16 +23,16 @@ lastUpdated: false
 
 ｱｽﾓがエフェクターを作るときの屋号です。
 
-- 製品情報など　　　　　[公式サイト](https://1xtelescope.com)
-- 製品のデモ音源　　　　[YouTube](https://www.youtube.com/@1xtelescope)
-- 国内向け販売　　　　　[メルカリ Shops](https://mercari-shops.com/shops/RdY2x3FGbBMRRMDFAuTXpa?source=shared_link&utm_source=shared_link)
-- 海外向け販売　　　　　[Reverb](https://reverb.com/shop/sa-ma-s-gear-locker)
+製品情報などは[公式サイト](https://1xtelescope.com)まで。
 
 ## お問い合わせ
 
-Discord またはメールがおすすめです。
+Twitter（現X）では対応できない場合があります。
 
-- レッツお近づき　　　　[Discord](https://discord.gg/DPArTErbtv)
-- 反応できないかもです　[Twitter](https://x.com/aSumo_1xts)
-- イシューでどうぞ　　　[GitHub](https://github.com/aSumo-1xts)
-- お気軽にどうぞ　　　　**1xtelescope [at] gmail.com**
+### Email
+
+1xtelescope[at]gmail.com
+
+### DM at Discord
+
+@aSumo-1xts
