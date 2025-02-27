@@ -3,10 +3,6 @@ import { SitemapStream } from "sitemap";
 import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
-import {
-  GitChangelog,
-  GitChangelogMarkdownSection,
-} from "@nolebase/vitepress-plugin-git-changelog/vite";
 import { type DefaultTheme } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
 

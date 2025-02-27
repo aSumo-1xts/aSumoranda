@@ -1,4 +1,3 @@
-import { h } from "vue";
 import DefaultTheme from "vitepress/theme-without-fonts";
 import type { Theme as ThemeConfig } from "vitepress";
 import "./style.css";
