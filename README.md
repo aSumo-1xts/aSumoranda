@@ -2,4 +2,4 @@
 
 ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
-Visit: https://asumo-1xts.github.io/aSumoranda/
+Visit: https://blog.1xtelescope.com/
