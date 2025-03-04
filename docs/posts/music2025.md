@@ -127,6 +127,15 @@ SC_Single   100%    *   207
 
 初見時アニメーション込みでめちゃくちゃ感動して、今も見返すたびに鳥肌が立つ。ストーリーテリングって、すげー！
 
+## ハミングがきこえる - カヒミ・カリィ
+
+<iframe width="336" height="189" src="https://www.youtube.com/embed/jgxmgtJ2Lc8" title="ハミングがきこえる  / カヒミ・カリィ【Official Music Video】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+ラジオで流れてきてめちゃくちゃ良い！！！となって、普通に誰かの新曲だと思って調べてみたら29年前の曲でデカい声が出た。
+「〇〇でした～」に耳をそばだてる行為は久しぶりだった。
+
+96年から98年までちびまる子ちゃんのOPだったらしく、ちょっとセンスが良すぎるだろ！！！
+
 <br/>
 
 ---
