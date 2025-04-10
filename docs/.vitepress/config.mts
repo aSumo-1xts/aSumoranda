@@ -80,8 +80,8 @@ export default defineConfig({
     },
 
     search: {
-      provider: 'local'
-    }
+      provider: "local",
+    },
   },
 
   appearance: "force-dark", // ダークモードのみ
@@ -127,7 +127,7 @@ export default defineConfig({
     // フォントのプリロード
     const FontFile = assets.find(
       (file) =>
-        /(NotoSansJP-VariableFont_wght|ZenKakuGothicNew-Regular|MoralerspaceNeonHW-Regular)\.\w+\.woff2$/
+        /(NotoSansJP-VariableFont_wght|ZenKakuGothicNew-Regular|MoralerspaceNeonHW-Regular)\.\w+\.woff2$/,
     );
     if (FontFile) {
       head.push([
