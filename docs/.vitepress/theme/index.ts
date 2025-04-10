@@ -6,10 +6,10 @@ import { NolebaseGitChangelogPlugin } from "@nolebase/vitepress-plugin-git-chang
 import "@nolebase/vitepress-plugin-git-changelog/client/style.css";
 import "@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css";
 import googleAnalytics from "vitepress-plugin-google-analytics";
-import 'viewerjs/dist/viewer.min.css';
-import imageViewer from 'vitepress-plugin-image-viewer';
-import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
-import { useRoute } from 'vitepress';
+import "viewerjs/dist/viewer.min.css";
+import imageViewer from "vitepress-plugin-image-viewer";
+import vImageViewer from "vitepress-plugin-image-viewer/lib/vImageViewer.vue";
+import { useRoute } from "vitepress";
 
 const Theme: ThemeConfig = {
   extends: DefaultTheme,
@@ -26,12 +26,12 @@ export default {
     googleAnalytics({
       id: "G-2B1RQXT1NM",
     });
-    ctx.app.component('vImageViewer', vImageViewer);
+    ctx.app.component("vImageViewer", vImageViewer);
   },
   setup() {
     // Get route
     const route = useRoute();
     // Using
     imageViewer(route);
-  }
+  },
 };

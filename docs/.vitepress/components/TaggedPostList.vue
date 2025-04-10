@@ -7,7 +7,7 @@ let taggedPosts = posts.filter((page) =>
     .toString()
     .replaceAll(" ", "")
     .toLowerCase()
-    .includes(props.tag)
+    .includes(props.tag),
 );
 </script>
 
