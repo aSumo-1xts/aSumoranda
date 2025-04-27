@@ -20,8 +20,8 @@ tags:
 
 ## はじめに
 
-個人的な備忘録です。
-新しいWindowsマシンが手元に来たとき自分が何をするのか、書き残しておきます。
+新しいWindowsマシンが来たとき、アプリケーションを一つずつインストールするのは結構大変です。
+楽をするため、そして管理しやすくするため、現状ではscoopを利用しているのでその備忘録です。
 
 ## Powershellをインストール
 
@@ -34,8 +34,9 @@ https://apps.microsoft.com/detail/9MZ1SNWT0N5D?hl=neutral&gl=JP&ocid=pdpshare
 
 ### 実行ポリシーを変更
 
-Defaultでは`Restricted`になっているようで、そのままでは素のps1ファイルを実行できません。
-一時的に`Unrestricted`にしておきます。
+Defaultでは`Restricted`になっているようで、
+そのままでは素のps1ファイルを実行できず次の手順において少し不便です。
+従って一時的に`Unrestricted`にしておきます。
 `Remotesigned`ではダメで、証明書が云々など面倒くさそうだったので深追いはしていません。
 
 ```shell
@@ -44,11 +45,15 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
 ### ps1ファイルを実行
 
-スクリプトにまとめて一括に実行したいと思います。
+適当なフォルダに`setupWin11.ps1`を置いて実行します。
 
 ```shell
 .\setupWin11.ps1
 ```
+
+::: code-group
+<<< @/snippets/setupWin11.ps1{shell}
+:::
 
 ### スタートアップの設定
 
@@ -66,10 +71,9 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/capr4n.omp.json" | Invoke-E
 
 ### 実行ポリシーを変更その2
 
-元の`default`に戻すと上記で設定した`profile.ps1`を実行できないので、`Remotesigned`にしておきます。
+元の`default`に戻すと今しがた設定した`profile.ps1`を実行できないので、`Remotesigned`にしておきます。
 
 ```shell
-# 実行ポリシーをデフォルトに戻す
 Set-ExecutionPolicy Remotesigned -Scope CurrentUser
 ```
 
