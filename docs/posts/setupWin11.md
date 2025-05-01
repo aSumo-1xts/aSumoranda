@@ -5,7 +5,7 @@ title: Windows11をScoopでセットアップ
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 date: 2025-04-28
-permalink: "https://blog.1xtelescope.com/posts/environment.html"
+permalink: "https://blog.1xtelescope.com/posts/setupWin11.html"
 
 prev: false
 next: false
@@ -59,8 +59,8 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
 ターミナル起動時に毎回モジュールを自動で呼び出すため、
 `code $PROFILE`を実行して開いたファイルに以下を書き込んで保存します。
-おそらくは`C:\Users\username\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`が開きます。
-Linuxにおけるrcファイルのようなものと解釈しています。
+（`C:\Users\username\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`が開くはずですが、
+存在しなければ自分で作成する必要があるかもしれません。）
 
 ```shell
 Import-Module PSReadLine
