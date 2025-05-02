@@ -63,7 +63,7 @@ export default defineConfig({
 
     footer: {
       message: "Some rights reserved.",
-      copyright: "ｱｽﾓ 2024 | CC BY-SA 4.0",
+      copyright: "ｱｽﾓ 2024-2025 | CC BY-SA 4.0",
     },
 
     editLink: {
