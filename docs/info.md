@@ -2,7 +2,7 @@
 layout: doc
 
 title: 各種ご案内
-description: お問い合わせなど
+description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 permalink: "https://blog.1xtelescope.com/info.html"
 

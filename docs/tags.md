@@ -2,7 +2,7 @@
 layout: doc
 
 title: すべてのタグ
-description: 記事に付けられたタグの一覧
+description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 permalink: "https://blog.1xtelescope.com/tags.html"
 

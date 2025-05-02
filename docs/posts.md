@@ -2,7 +2,7 @@
 layout: doc
 
 title: すべての記事
-description: これまでに書いた記事の一覧です
+description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 permalink: "https://blog.1xtelescope.com/posts.html"
 
