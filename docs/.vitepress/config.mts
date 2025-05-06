@@ -1,4 +1,5 @@
-import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
+import { createContentLoader, HeadConfig } from "vitepress";
+import { withMermaid } from "vitepress-plugin-mermaid";
 import { SitemapStream } from "sitemap";
 import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
@@ -6,7 +7,7 @@ import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import { type DefaultTheme } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
 
-export default defineConfig({
+export default withMermaid({
   //   vite: {
   //     plugins: [
   //       GitChangelog({
@@ -152,6 +153,10 @@ export default defineConfig({
     // まとめて返す
     return head;
   },
+
+  // mermaidの設定
+  mermaid: { theme: "forest" },
+  mermaidPlugin: { class: "mermaid my-class" },
 });
 
 function mySidebar(): DefaultTheme.SidebarItem[] {
