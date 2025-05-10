@@ -20,13 +20,11 @@ tags:
 
 ## はじめに
 
-新しいWindowsマシンが来たとき、アプリケーションを一つずつインストールするのは結構大変です。
-楽をするため、そして管理しやすくするため、現状ではScoopを利用しているのでその備忘録です。
+新しいWindowsマシンが来たとき、アプリケーションを一つずつインストールするのは結構大変です。楽をするため、そして管理しやすくするため、現状ではScoopを利用しているのでその備忘録です。
 
 ## Powershellをインストール
 
-元から入っているWindows Powershellというやつではなく、
-OSS版のPowershell（無印）をMIcrosoft Storeからインストールして使います。
+元から入っているWindows Powershellというやつではなく、OSS版のPowershell（無印）をMIcrosoft Storeからインストールして使います。
 
 https://apps.microsoft.com/detail/9MZ1SNWT0N5D?hl=neutral&gl=JP&ocid=pdpshare
 
@@ -34,10 +32,7 @@ https://apps.microsoft.com/detail/9MZ1SNWT0N5D?hl=neutral&gl=JP&ocid=pdpshare
 
 ### 実行ポリシーを変更
 
-Defaultでは`Restricted`になっているようで、
-そのままでは素のps1ファイルを実行できず次の手順において少し不便です。
-従って一時的に`Unrestricted`にしておきます。
-`Remotesigned`ではダメで、証明書が云々など面倒くさそうだったので深追いはしていません。
+Defaultでは`Restricted`になっているようで、そのままでは素のps1ファイルを実行できず次の手順において少し不便です。従って一時的に`Unrestricted`にしておきます。`Remotesigned`ではダメで、証明書が云々など面倒くさそうだったので深追いはしていません。
 
 ```shell
 Set-ExecutionPolicy Unrestricted -Scope CurrentUser
@@ -57,10 +52,7 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
 ### スタートアップの設定
 
-ターミナル起動時に毎回モジュールを自動で呼び出すため、
-`code $PROFILE`を実行して開いたファイルに以下を書き込んで保存します。
-（`C:\Users\username\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`が開くはずですが、
-存在しなければ自分で作成する必要があるかもしれません。）
+ターミナル起動時に毎回モジュールを自動で呼び出すため、`code $PROFILE`を実行して開いたファイルに以下を書き込んで保存します。（`C:\Users\username\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`が開くはずですが、存在しなければ自分で作成する必要があるかもしれません。）
 
 ```shell
 Import-Module PSReadLine
