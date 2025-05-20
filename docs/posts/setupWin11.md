@@ -74,9 +74,10 @@ Set-ExecutionPolicy Remotesigned -Scope CurrentUser
 当該のWindowsマシンをカジュアルに利用して良い場合は、追加で以下も実行するかもしれません。
 
 ```shell
-Scoop install discord
-Scoop install doxygen
-Scoop install graphviz
+scoop install discord
+scoop install doxygen
+scoop install graphviz
+scoop install kicad
 ```
 
 <br/>
