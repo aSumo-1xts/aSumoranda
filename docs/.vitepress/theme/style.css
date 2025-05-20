@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "myMainFont";
+  src: url("./fonts/NotoSansJP-VariableFont_wght.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "mySubFont";
+  src: url("./fonts/ZenKakuGothicNew-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "myCodeFont";
+  src: url("./fonts/MoralerspaceNeonHW-Regular.woff2") format("woff2");
+}
+
+.dark {
+  --vp-c-miku-1: #a8d9d5;
+  --vp-c-miku-2: #68b3af;
+  --vp-c-miku-3: #039393;
+  --vp-c-miku-soft: rgba(168, 217, 213, 0.16);
+
+  --vp-c-brand-1: var(--vp-c-miku-1);
+  --vp-c-brand-2: var(--vp-c-miku-2);
+  --vp-c-brand-3: var(--vp-c-miku-3);
+  --vp-c-brand-soft: var(--vp-c-miku-soft);
+
+  --vp-c-bg: #141414;
+  --vp-c-bg-alt: #0c0c0c;
+  --vp-c-bg-elv: #0c0c0c;
+  --vp-c-bg-soft: #0c0c0c;
+
+  --vp-c-divider: #5a5a5a;
+  --vp-c-border: #5a5a5a;
+  --vp-c-gutter: #5a5a5a;
+}
+
+/* 参考: https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css */
+
+body {
+  font-family: "myMainFont", sans-serif;
+}
+
+h2 {
+  font-family: "mySubFont", serif;
+}
+
+code {
+  font-family: "myCodeFont", monospace;
+}
