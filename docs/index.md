@@ -8,7 +8,7 @@ hero:
   name: "aSumoranda"
   tagline: "↓↓↓ Recomended Posts ↓↓↓"
   image:
-    src: cover01.png
+    src: cover01.webp
     alt: aSumoranda
 
 features:

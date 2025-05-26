@@ -35,7 +35,7 @@ export default withMermaid({
   },
 
   themeConfig: {
-    logo: "./home.png",
+    logo: "./home.webp",
     siteTitle: false,
 
     outlineTitle: "目次",
