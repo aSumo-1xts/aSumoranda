@@ -17,11 +17,14 @@ scoop install curl
 scoop install wget
 scoop install gsudo
 
+scoop install python
+scoop install doxygen
+scoop install graphviz
+scoop install ffmpeg
+
 scoop install posh-git
 scoop install oh-my-posh
 scoop install Terminal-Icons
-
-scoop install python
 
 scoop install googlechrome
 scoop install docker
@@ -33,5 +36,6 @@ scoop install crystaldiskmark
 scoop install gpu-z
 
 scoop install vim
+scoop install edit
 scoop install mery
 scoop install vscode

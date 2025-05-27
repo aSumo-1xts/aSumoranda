@@ -52,7 +52,7 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
 ### スタートアップの設定
 
-ターミナル起動時に毎回モジュールを自動で呼び出すため、`code $PROFILE`を実行して開いたファイルに以下を書き込んで保存します。（`C:\Users\username\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`が開くはずですが、存在しなければ自分で作成する必要があるかもしれません。）
+ターミナル起動時に毎回モジュールを自動で呼び出すため、`$PROFILE`で指定されているファイルに以下を書き込んで保存します。（`C:\Users\[username]\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`が開くはずですが、存在しなければ自分で作成する必要があるかもしれません。）
 
 ```shell
 Import-Module PSReadLine
@@ -74,9 +74,8 @@ Set-ExecutionPolicy Remotesigned -Scope CurrentUser
 当該のWindowsマシンをカジュアルに利用して良い場合は、追加で以下も実行するかもしれません。
 
 ```shell
-Scoop install discord
-Scoop install doxygen
-Scoop install graphviz
+scoop install discord
+scoop install kicad
 ```
 
 <br/>
