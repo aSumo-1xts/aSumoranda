@@ -17,6 +17,7 @@ scoop install curl
 scoop install wget
 scoop install gsudo
 
+scoop install docker
 scoop install python
 scoop install doxygen
 scoop install graphviz
@@ -27,14 +28,14 @@ scoop install oh-my-posh
 scoop install Terminal-Icons
 
 scoop install googlechrome
-scoop install docker
-scoop install obsidian
+scoop install zoom
 
 scoop install rufus
 scoop install crystaldiskinfo
 scoop install crystaldiskmark
 scoop install gpu-z
 
+scoop install obsidian
 scoop install vim
 scoop install edit
 scoop install mery
