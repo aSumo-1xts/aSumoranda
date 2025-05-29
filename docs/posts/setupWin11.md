@@ -75,6 +75,7 @@ Set-ExecutionPolicy Remotesigned -Scope CurrentUser
 
 ```shell
 scoop install discord
+scoop install figma
 scoop install kicad
 ```
 
