@@ -1,7 +1,7 @@
 ---
 layout: doc
 
-title: BibLaTeXで欧文和文を混ぜる
+title: BibLaTeXで欧文和文を混ぜて扱う
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 date: 2025-06-10
@@ -16,13 +16,11 @@ tags:
 
 [LaTeX](../tags/latex.md)
 
-# BibLaTeXで欧文和文を混ぜる
+# BibLaTeXで欧文和文を混ぜて扱う
 
 ## はじめに
 
-BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語への対応状況が芳しくないようです。
-
-先人が[こういうもの](https://github.com/kmaed/biblatex-japanese.git)を残したりしていますが、残念ながら手元であんまり上手く動かなかったので、半ばごり押しで以下の項目を実装します。
+BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語への対応状況が芳しくありません。先人が[こういうもの](https://github.com/kmaed/biblatex-japanese.git)を残したりしていますが、残念ながら手元であんまり上手く動かなかったので、半ばごり押しで以下の項目を実装します。
 
 | 列1 | 欧文の文献 | 和文の文献 |
 |-----|-----|-----|
@@ -41,25 +39,34 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 
 ここが唯一の手動ポイントなのでどうにか自動化したいところですが、論文1本の中に含まれる和文の文献の数って（少なくとも理工系においては）高が知れているという印象なので、まあ良いでしょう。
 
-```txt{19}
+```txt{20,28}
 @article{Europian2001,
   title   = {Europian title},
   author  = {Author, Europian and Editor, Europian},
   journal = {Europian journal},
-  year    = {2001},
-  volume  = {12},
-  number  = {10},
-  pages   = {10--20}
+  date    = 2001
+}
+
+@article{Europian2002,
+  title   = {Europian title 2},
+  author  = {Author, Europian and Editor, Europian and Director, Europian},
+  journal = {Europian journal},
+  date    = 2002
 }
 
 @article{Japanese2001,
   title     = {和文の文献},
   author    = {和文太郎 and 和文花子},
   journal   = {和文ジャーナル},
-  year      = {2001},
-  volume    = {12},
-  number    = {10},
-  pages     = {10--20},
+  date      = 2001,
+  langid    = {Japanese}
+}
+
+@article{Japanese2002,
+  title     = {和文の文献 2},
+  author    = {和文太郎 and 和文花子 and 和文次郎},
+  journal   = {和文ジャーナル},
+  date      = 2002,
   langid    = {Japanese}
 }
 ```
@@ -73,12 +80,12 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 ```tex
 \documentclass[uplatex, twocolumn]{jlreq} % jsarticleでも可
 
-\usepackage[style=numeric-comp]{biblatex}　% BibLaTeXパッケージ読み込み
+\usepackage[style=numeric-comp]{biblatex} % BibLaTeXパッケージ読み込み
 \addbibresource{ref.bib} % bibファイルを登録
 \ExecuteBibliographyOptions{ % 追加オプション（他にも色々）
-sorting = none, % 引用した順に並べる
-maxnames = 2, % 連名になっている著者の数がmaxnamesを超えると、
-minnames = 2 % 初めのminnames人だけ表記されて残りは省略される
+  sorting = none, % 引用した順に並べる
+  maxnames = 2, % 連名になっている著者の数がmaxnamesを超えると、
+  minnames = 1 % 初めのminnames人だけ表記されて残りは省略される
 }
 
 % ここまでは常套手段、検索結果も多数
@@ -143,8 +150,8 @@ if ($^O eq 'linux') {
 
 ```tex
 \begin{document}
-    Europianらの研究\cite{Europian2001}もあれば、%
-    和文らの研究\cite{Japanese2001}もある。
+    Europianらの研究\cite{Europian2001}\cite{Europian2002}もあれば、%
+    和文らの研究\cite{Japanese2001}\cite{Japanese2002}もある。
 
     \renewcommand{\bibfont}{\footnotesize}
     \printbibliography[title = 参考文献]
