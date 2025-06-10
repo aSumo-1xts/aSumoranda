@@ -1,7 +1,7 @@
 ---
 layout: doc
 
-title: BibLaTeXで欧文和文を混ぜたい
+title: BibLaTeXで欧文和文を混ぜる
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 date: 2025-06-10
