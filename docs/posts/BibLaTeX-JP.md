@@ -16,7 +16,7 @@ tags:
 
 [LaTeX](../tags/latex.md)
 
-# BibLaTeXで欧文和文を混ぜたい
+# BibLaTeXで欧文和文を混ぜる
 
 ## はじめに
 
