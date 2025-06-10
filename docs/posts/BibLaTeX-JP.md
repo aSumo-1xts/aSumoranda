@@ -20,7 +20,7 @@ tags:
 
 ## はじめに
 
-BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語への対応状況が芳しくないようです。
+BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語への対応状況が芳しくありません。
 
 先人が[こういうもの](https://github.com/kmaed/biblatex-japanese.git)を残したりしていますが、残念ながら手元であんまり上手く動かなかったので、半ばごり押しで以下の項目を実装します。
 
@@ -85,9 +85,9 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 \usepackage[style=numeric-comp]{biblatex} % BibLaTeXパッケージ読み込み
 \addbibresource{ref.bib} % bibファイルを登録
 \ExecuteBibliographyOptions{ % 追加オプション（他にも色々）
-sorting = none, % 引用した順に並べる
-maxnames = 2, % 連名になっている著者の数がmaxnamesを超えると、
-minnames = 1 % 初めのminnames人だけ表記されて残りは省略される
+  sorting = none, % 引用した順に並べる
+  maxnames = 2, % 連名になっている著者の数がmaxnamesを超えると、
+  minnames = 1 % 初めのminnames人だけ表記されて残りは省略される
 }
 
 % ここまでは常套手段、検索結果も多数
