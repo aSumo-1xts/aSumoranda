@@ -35,9 +35,7 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 
 ## bibファイル
 
-和文の文献だけ、最後に`langid=Japanese`を追加しておきます。デフォルトの体裁はGoogle Scholerの検索ヒット画面から「引用」バナーをクリックしたときに出てくるやつに準拠しています。
-
-ここが唯一の手動ポイントなのでどうにか自動化したいところですが、論文1本の中に含まれる和文の文献の数って（少なくとも理工系においては）高が知れているという印象なので、まあ良いでしょう。
+和文の文献だけ、最後に`langid=Japanese`を追加しておきます。ここが唯一の手動ポイントなのでどうにか自動化したいところですが、論文1本の中に含まれる和文の文献の数って（少なくとも理工系においては）高が知れているという印象なので、まあ良いでしょう。
 
 ```txt{20,28}
 @article{Europian2001,
@@ -117,7 +115,7 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 
 :::details おそらくlatexmkrcも必要
 
-```sh
+```perl
 #!/usr/bin/env perl
 
 $latex = "find . -type f -name '*.tex' -print0 | xargs -0 sed -i '' -e 's/、/，/g' -e 's/。/．/g'; uplatex -synctex=1 -halt-on-error -interaction=nonstopmode -file-line-error %O %S";
