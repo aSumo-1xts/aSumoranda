@@ -91,7 +91,7 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 % ===============================================================================
 % ここから奥の手
 
-\usepackage[english, british]{babel}
+\usepackage[british, english]{babel}
 % babelパッケージにjapaneseは無いらしい
 % 以下のDefineBiblio~コマンドを使いたいけれど言語設定が必要なので、
 % 便宜的にjapaneseの代わりにbritishを割り当てておく
@@ -107,7 +107,7 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
         \DeclareFieldFormat[book]{title}{『#1』} % 書籍なら二重鍵括弧
         \renewbibmacro{in:}{} % ジャーナル名の前の「In:」を除去
         }{% ここまでが和文の文献に限った処理
-    \selectlanguage{english}} % else: 欧文の文献はデフォルトの処理で良い
+    \selectlanguage{english}} % else: 欧文の文献はデフォルト（english）の処理で良い
 }
 
 % 奥の手ここまで（プリアンブル終了）
