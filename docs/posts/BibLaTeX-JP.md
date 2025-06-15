@@ -26,7 +26,8 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 |-----|-----|-----|
 | 連名著者の省略 | et al. | 他 |
 | 連名著者の区切り | hoge, fuga, and piyo. | hoge, fuga, piyo. |
-| 文献のタイトル | ``タイトル'' | 「タイトル」 |
+| 文献のタイトル | ``Title'' | 「タイトル」 |
+| 会議・ジャーナル名の区切り | In: Hoge Conference | 何とか会議（In: 無し） |
 
 ## 環境
 
@@ -40,14 +41,14 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 ```txt{20,28}
 @article{Europian2001,
   title   = {Europian title},
-  author  = {Author, Europian and Editor, Europian},
+  author  = {Europian, Author and Europian, Editor},
   journal = {Europian journal},
   date    = 2001
 }
 
 @article{Europian2002,
   title   = {Europian title 2},
-  author  = {Author, Europian and Editor, Europian and Director, Europian},
+  author  = {Europian, Author and Europian, Editor and Europian, Director},
   journal = {Europian journal},
   date    = 2002
 }
@@ -104,6 +105,7 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
             \addspace\multinamedelim }
         \DeclareFieldFormat*{title}{「#1」} % 論文のタイトルを鍵括弧で囲む
         \DeclareFieldFormat[book]{title}{『#1』} % 書籍なら二重鍵括弧
+        \renewbibmacro{in:}{} % ジャーナル名の前の「In:」を除去
         }{% ここまでが和文の文献に限った処理
     \selectlanguage{english}} % else: 欧文の文献はデフォルトの処理で良い
 }
