@@ -1,7 +1,7 @@
 ---
 layout: doc
 
-title: Windows11をScoopでセットアップ
+title: Win11をScoopでセットアップ
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 date: 2025-04-28
@@ -16,7 +16,7 @@ tags:
 
 [環境構築](../tags/environment)
 
-# Windows11をScoopでセットアップ
+# Win11をScoopでセットアップ
 
 ## はじめに
 

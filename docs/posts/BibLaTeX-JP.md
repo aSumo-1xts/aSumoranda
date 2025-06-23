@@ -1,7 +1,7 @@
 ---
 layout: doc
 
-title: BibLaTeXで欧文和文を混ぜて扱う
+title: BibLaTeXで欧文和文を混ぜる
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 date: 2025-06-10
@@ -16,7 +16,7 @@ tags:
 
 [LaTeX](../tags/latex.md)
 
-# BibLaTeXで欧文和文を混ぜて扱う
+# BibLaTeXで欧文和文を混ぜる
 
 ## はじめに
 
@@ -96,6 +96,7 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 % 以下のDefineBiblio~コマンドを使いたいけれど言語設定が必要なので、
 % 便宜的にjapaneseの代わりにbritishを割り当てておく
 \DefineBibliographyStrings{british}{andothers={他}} % 和文の文献なら「他」
+\DefineBibliographyStrings{english}{andothers={\textit{et al.}}} % 斜体にする
 
 \AtEveryBibitem{ % bibファイルの文献を走査してゆく
     \iffieldequalstr{langid}{Japanese}{ % if: langid=Japaneseとした文献のみピックアップ
@@ -153,7 +154,7 @@ if ($^O eq 'linux') {
     Europianらの研究\cite{Europian2001}\cite{Europian2002}もあれば、%
     和文らの研究\cite{Japanese2001}\cite{Japanese2002}もある。
 
-    \renewcommand{\bibfont}{\footnotesize}
+    % \renewcommand{\bibfont}{\footnotesize}
     \printbibliography[title = 参考文献]
 \end{document}
 ```
