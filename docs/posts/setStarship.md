@@ -20,6 +20,8 @@ tags:
 
 ## はじめに
 
+ターミナルについて、WindowsではPowershell+Oh My Posh、Ubuntuではzsh+Oh My Zshという構成だったのですが、StarshipがPowershellにもzshにも対応しているとのことでOh My PoshおよびOh My Zshから乗り換えることにしました。
+
 :::tabs
 == tab a
 a content
@@ -33,3 +35,5 @@ a content 2
 == tab b
 b content 2
 :::
+
+補完機能については、PowershellではPosh-Gitを、zshでは3つを使います。
