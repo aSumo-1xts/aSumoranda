@@ -55,10 +55,9 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 ターミナル起動時に毎回モジュールを自動で呼び出すため、`$PROFILE`で指定されているファイルに以下を書き込んで保存します。（`C:\Users\[username]\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`が開くはずですが、存在しなければ自分で作成する必要があるかもしれません。）
 
 ```shell
+Invoke-Expression (&starship init powershell)
 Import-Module PSReadLine
-Import-Module Terminal-Icons
 Import-Module posh-git
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/capr4n.omp.json" | Invoke-Expression;
 ```
 
 ### 実行ポリシーを変更その2

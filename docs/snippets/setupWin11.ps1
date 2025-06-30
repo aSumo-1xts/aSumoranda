@@ -25,7 +25,7 @@ scoop install ffmpeg
 
 scoop install starship
 scoop install posh-git
-scoop install Terminal-Icons
+scoop install eza
 
 scoop install googlechrome
 scoop install zoom
