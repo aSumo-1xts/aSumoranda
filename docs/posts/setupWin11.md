@@ -56,7 +56,6 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
 ```shell
 Invoke-Expression (&starship init powershell)
-Import-Module PSReadLine
 Import-Module posh-git
 ```
 
@@ -67,6 +66,14 @@ Import-Module posh-git
 ```shell
 Set-ExecutionPolicy Remotesigned -Scope CurrentUser
 ```
+
+### Starshipを設定する
+
+`~/.config/starship.toml`を作成・編集します。
+
+::: code-group
+<<< @/snippets/starship.toml{toml}
+:::
 
 ### その他
 
