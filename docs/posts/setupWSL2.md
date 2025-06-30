@@ -26,8 +26,22 @@ tags:
 
 ここは割愛します。
 
+## 先回りして`~/.zshrc`を埋める
+
+::: code-group
+<<< @/snippets/.zshrc{shell}
+:::
+
 ## まとめてインストール
 
 ::: code-group
 <<< @/snippets/setupWSL2.sh{shell}
+:::
+
+## Starshipを設定する
+
+`~/.config/starship.toml`を作成・編集します。
+
+::: code-group
+<<< @/snippets/starship.toml{toml}
 :::

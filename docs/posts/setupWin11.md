@@ -67,7 +67,7 @@ Import-Module posh-git
 Set-ExecutionPolicy Remotesigned -Scope CurrentUser
 ```
 
-### Starshipを設定する
+## Starshipを設定する
 
 `~/.config/starship.toml`を作成・編集します。
 
@@ -75,7 +75,7 @@ Set-ExecutionPolicy Remotesigned -Scope CurrentUser
 <<< @/snippets/starship.toml{toml}
 :::
 
-### その他
+## その他
 
 当該のWindowsマシンをカジュアルに利用して良い場合は、追加で以下も実行するかもしれません。
 
