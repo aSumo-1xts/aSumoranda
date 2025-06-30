@@ -23,8 +23,8 @@ scoop install doxygen
 scoop install graphviz
 scoop install ffmpeg
 
+scoop install starship
 scoop install posh-git
-scoop install oh-my-posh
 scoop install Terminal-Icons
 
 scoop install googlechrome
