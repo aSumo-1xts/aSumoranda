@@ -1,6 +1,7 @@
 ---
 layout: doc
 
+emoji: 🎛️
 title: Arduinoで理想のMIDIコントローラーを作る
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 

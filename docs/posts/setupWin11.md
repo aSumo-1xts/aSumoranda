@@ -1,6 +1,7 @@
 ---
 layout: doc
 
+emoji: 🪟
 title: Win11をScoopでセットアップ
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
