@@ -1,7 +1,7 @@
 ---
 layout: doc
 
-title: Win11をScoopでセットアップ
+title: Win11の私的なセットアップ
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 date: 2025-04-28
@@ -16,19 +16,32 @@ tags:
 
 [環境構築](../tags/environment)
 
-# Win11をScoopでセットアップ
+# Win11の私的なセットアップ
 
 ## はじめに
 
-新しいWindowsマシンが来たとき、アプリケーションを一つずつインストールするのは結構大変です。楽をするため、そして管理しやすくするため、現状ではScoopを利用しているのでその備忘録です。
+新しいWindowsマシンが来たとき、アプリケーションを一つずつインストールするのは結構大変です。なんやかんや試した末、常用のGUIツールはwingetで、それ以外はscoopでそれぞれ管理することにしたので、その備忘録です。
 
-## Powershellをインストール
+## winget
 
-元から入っているWindows Powershellというやつではなく、OSS版のPowershell（無印）をMIcrosoft Storeからインストールして使います。
+主に以下をインストールします：
 
-https://apps.microsoft.com/detail/9MZ1SNWT0N5D?hl=neutral&gl=JP&ocid=pdpshare
+- Powershell
+- VScode
+- GoogleChrome
+- Mery
+- Obsidian
+- Notion
 
-## ひたすらコマンド入力
+備え付けのWindows Powershellで管理者として作業します。
+
+`winget export -o MyAppList.json`しておいたjsonファイルを`winget import MyAppList.json`して一括でインストールします。
+
+<!-- TODO: jsonファイルを貼る -->
+
+## scoop
+
+GitやPythonや雑多なCLIツールをインストールします。今しがたwingetでインストールした無印のPowershellで作業します。
 
 ### 実行ポリシーを変更
 
@@ -52,16 +65,16 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
 ### スタートアップの設定
 
-ターミナル起動時に毎回モジュールを自動で呼び出すため、`$PROFILE`で指定されているファイルに以下を書き込んで保存します。（`C:\Users\[username]\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`が開くはずですが、存在しなければ自分で作成する必要があるかもしれません。）
+ターミナル起動時に毎回モジュールを自動で呼び出すため、`$PROFILE`で指定されているファイルに以下を書き込んで保存します。`C:\Users\[username]\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`が開くはずですが、存在しなければ自分で作成する必要があるかもしれません。
 
 ```shell
-Invoke-Expression (&starship init powershell)
 Import-Module posh-git
+Invoke-Expression (&starship init powershell)
 ```
 
 ### 実行ポリシーを変更その2
 
-元の`default`に戻すと今しがた設定した`profile.ps1`を実行できないので、`Remotesigned`にしておきます。
+元の`default`に戻すと今しがた設定した`~profile.ps1`を実行できないので、`Remotesigned`にしておきます。
 
 ```shell
 Set-ExecutionPolicy Remotesigned -Scope CurrentUser
@@ -81,7 +94,6 @@ Set-ExecutionPolicy Remotesigned -Scope CurrentUser
 
 ```shell
 scoop install discord
-scoop install figma
 scoop install kicad
 ```
 
