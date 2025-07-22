@@ -1,6 +1,7 @@
 ---
 layout: doc
 
+emoji: 🏛️
 title: BibLaTeXで欧文和文を混ぜる
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 

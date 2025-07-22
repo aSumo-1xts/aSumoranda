@@ -1,6 +1,7 @@
 ---
 layout: doc
 
+emoji: 🎵
 title: ArduinoでDAWからBPMを取得する
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
