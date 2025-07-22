@@ -25,15 +25,15 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 
 | 列1 | 欧文の文献 | 和文の文献 |
 |-----|-----|-----|
-| 連名著者の省略 | et al. | 他 |
+| 連名著者の省略 | *et al.* | 他 |
 | 連名著者の区切り | hoge, fuga, and piyo. | hoge, fuga, piyo. |
 | 文献のタイトル | ``Title'' | 「タイトル」 |
 | 会議・ジャーナル名の区切り | In: Hoge Conference | 何とか会議（In: 無し） |
 
 ## 環境
 
-- Overleaf / Ubuntu(TeXLive-full)
-- (u)pLaTeX（LuaLaTeXだともう少し別な方法がありそう…）
+- Overleaf / Ubuntu （TeXLive-full）
+- upLaTeX（LuaLaTeXだともう少し別な方法がありそう…）
 
 ## bibファイル
 
