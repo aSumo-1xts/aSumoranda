@@ -2,7 +2,7 @@
 layout: doc
 
 emoji: 🎵
-title: ArduinoでDAWからBPMを取得する
+title: ArduinoでDAWからBPMを取得
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 date: 2024-08-12
@@ -19,7 +19,7 @@ tags:
 
 [MIDI](../tags/midi) | [Arduino](../tags/arduino) | [C/C++](../tags/ccpp.md)
 
-# ArduinoでDAWからBPMを取得する
+# ArduinoでDAWからBPMを取得
 
 ## はじめに
 
