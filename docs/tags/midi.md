@@ -4,7 +4,7 @@ layout: doc
 title: MIDI
 description: 「MIDI」のタグが付いた記事
 
-order: 21
+order: 11
 permalink: "https://blog.1xtelescope.com/tags/midi.html"
 
 prev: false

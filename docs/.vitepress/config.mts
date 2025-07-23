@@ -1,5 +1,4 @@
-import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
-import { fileURLToPath } from "url";
+import { createContentLoader, HeadConfig } from "vitepress";
 import { SitemapStream } from "sitemap";
 import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
@@ -9,16 +8,6 @@ import { type DefaultTheme } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
 
 export default withMermaid({
-  //   vite: {
-  //     plugins: [
-  //       GitChangelog({
-  //         // Fill in your repository URL here
-  //         repoURL: () => 'https://github.com/aSumo-1xts/aSumoranda',
-  //       }),
-  //       GitChangelogMarkdownSection(),
-  //     ],
-  //   },
-
   lang: "ja",
   base: "/",
   title: "aSumoranda",
@@ -27,9 +16,6 @@ export default withMermaid({
   markdown: {
     math: true,
     lineNumbers: true,
-    image: {
-      lazyLoading: false,
-    },
     config: (md) => {
       md.use(tabsMarkdownPlugin);
     },
