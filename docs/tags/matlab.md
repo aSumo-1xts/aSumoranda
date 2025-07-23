@@ -4,7 +4,7 @@ layout: doc
 title: MATLAB
 description: 「MATLAB」のタグが付いた記事
 
-order: 31
+order: 33
 permalink: "https://blog.1xtelescope.com/tags/matlab.html"
 
 prev: false
@@ -12,8 +12,6 @@ next: false
 
 editLink: false
 lastUpdated: false
-
-hidden: true
 ---
 
 <script lang="ts" setup>

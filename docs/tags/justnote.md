@@ -4,7 +4,7 @@ layout: doc
 title: 雑記
 description: 「雑記」のタグが付いた記事
 
-order: 11
+order: 10
 permalink: "https://blog.1xtelescope.com/tags/justnote.html"
 
 prev: false
