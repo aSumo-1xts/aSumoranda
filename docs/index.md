@@ -21,7 +21,7 @@ features:
     details: 雑記
     link: ./posts/book2025
   - icon: 🎛️
-    title: Arduinoで理想のMIDIコントローラーを作る
+    title: 理想のMIDIコンを自作する
     details: その他の工作 | MIDI | Arduino | C/C++
     link: ./posts/HeartLand
 
