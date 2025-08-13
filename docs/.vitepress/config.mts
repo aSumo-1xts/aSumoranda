@@ -114,7 +114,7 @@ export default withMermaid({
     // フォントのプリロード
     const FontFile = assets.find(
       (file) =>
-        /(NotoSansJP-VariableFont_wght|ZenKakuGothicNew-Regular|MoralerspaceNeonHWNF-Regular)\.\w+\.woff2$/,
+        /(NotoSansJP-VariableFont_wght|ZenKakuGothicNew-Regular|MoralerspaceNeonHW-Regular)\.\w+\.woff2$/,
     );
     if (FontFile) {
       head.push([
