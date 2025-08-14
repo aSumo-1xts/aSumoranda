@@ -145,7 +145,7 @@ export default withMermaid({
   },
 
   // mermaidの設定
-  mermaid: { theme: "forest" },
+  mermaid: {},
   mermaidPlugin: { class: "mermaid my-class" },
 });
 
