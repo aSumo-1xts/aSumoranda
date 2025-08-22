@@ -1,10 +1,10 @@
 import { createContentLoader, HeadConfig } from "vitepress";
+import { type DefaultTheme } from "vitepress";
 import { SitemapStream } from "sitemap";
 import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import { withMermaid } from "vitepress-plugin-mermaid";
-import { type DefaultTheme } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
@@ -113,6 +113,8 @@ export default withMermaid({
     ["meta", { property: "og:site_name", content: "aSumoranda" }],
     ["meta", { property: "twitter:card", content: "summary" }],
     ["meta", { property: "twitter:site", content: "@asumo_1xts" }],
+    // ["script", { async: "true", src: "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"}],
+    // ["script", {}, "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-XXXXXXXXXX');"]
   ],
 
   transformHead({ assets, pageData }) {

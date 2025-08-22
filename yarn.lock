@@ -1582,7 +1582,6 @@ __metadata:
     sitemap: "npm:^8.0.0"
     vitepress: "npm:^1.6.3"
     vitepress-plugin-codeblocks-fold: "npm:^1.2.35"
-    vitepress-plugin-google-analytics: "npm:^1.0.2"
     vitepress-plugin-group-icons: "npm:^1.6.3"
     vitepress-plugin-image-viewer: "npm:^1.1.6"
     vitepress-plugin-mermaid: "npm:^2.0.17"
@@ -4194,13 +4193,6 @@ __metadata:
   version: 1.2.35
   resolution: "vitepress-plugin-codeblocks-fold@npm:1.2.35"
   checksum: 10c0/ff986dc5434ef0993e39e2bafddcae091530a2b640ddd5889f77de528194b0fd77497d9ca4e3412bd064edb44bfa37ae6e8d9099f6b3b46522a151bdc8d44e2b
-  languageName: node
-  linkType: hard
-
-"vitepress-plugin-google-analytics@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "vitepress-plugin-google-analytics@npm:1.0.2"
-  checksum: 10c0/17b09ff91cf7f3bdd43373386f37315e88094576834dd5256071c8f357f43b23a0cb3a059f014cabccd80aea5f685c3947451f81b79d8f82add7e263ed80ccde
   languageName: node
   linkType: hard
 
