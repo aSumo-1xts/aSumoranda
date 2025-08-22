@@ -6,7 +6,10 @@ import { resolve } from "node:path";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import { withMermaid } from "vitepress-plugin-mermaid";
 import { generateSidebar } from "vitepress-sidebar";
-import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+import {
+  groupIconMdPlugin,
+  groupIconVitePlugin,
+} from "vitepress-plugin-group-icons";
 
 export default withMermaid({
   lang: "ja",
@@ -19,19 +22,16 @@ export default withMermaid({
     lineNumbers: true,
     config: (md) => {
       md.use(tabsMarkdownPlugin);
-      md.use(groupIconMdPlugin)
+      md.use(groupIconMdPlugin);
     },
   },
   vite: {
-    plugins: [
-      groupIconVitePlugin()
-    ],
+    plugins: [groupIconVitePlugin()],
   },
 
   themeConfig: {
     logo: "./home.webp",
     siteTitle: false,
-
     outlineTitle: "目次",
 
     nav: [
@@ -113,6 +113,7 @@ export default withMermaid({
     ["meta", { property: "og:site_name", content: "aSumoranda" }],
     ["meta", { property: "twitter:card", content: "summary" }],
     ["meta", { property: "twitter:site", content: "@asumo_1xts" }],
+
     // ["script", { async: "true", src: "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"}],
     // ["script", {}, "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-XXXXXXXXXX');"]
   ],
@@ -123,7 +124,7 @@ export default withMermaid({
     // フォントのプリロード
     const FontFile = assets.find(
       (file) =>
-        /(NotoSansJP-VariableFont_wght|ZenKakuGothicNew-Regular|MoralerspaceNeonHW-Regular)\.\w+\.woff2$/,
+        /(NotoSansJP-VariableFont_wght|ZenKakuGothicNew-Regular|MoralerspaceNeonHW-Regular)\.\w+\.woff2$/
     );
     if (FontFile) {
       head.push([
@@ -149,8 +150,7 @@ export default withMermaid({
     head.push(["meta", { property: "og:url", content: url }]);
     head.push(["meta", { property: "og:author", content: author }]);
 
-    // まとめて返す
-    return head;
+    return head; // まとめて返す
   },
 
   // mermaidの設定
