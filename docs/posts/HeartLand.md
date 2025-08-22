@@ -26,7 +26,7 @@ tags:
 
 「ぼくがかんがえたさいきょうのMIDIコントローラー」を作ったので、その工程をまとめました。ソースコードや回路図はGitHubにも載せています。
 
-https://github.com/aSumo-1xts/MIDI-HARD/tree/main/HeartLand
+<https://github.com/aSumo-1xts/MIDI-HARD/tree/main/HeartLand>
 
 ## 環境
 
@@ -178,11 +178,11 @@ mother側では、DAWからクロックを受けてLEDをメトロノーム的�
 
 #### Arduino ProMicro
 
-https://github.com/g200kg/kicad-lib-arduino
+<https://github.com/g200kg/kicad-lib-arduino>
 
 #### Arduino Mega2560 ProMini
 
-https://github.com/Alarm-Siren/arduino-kicad-library
+<https://github.com/Alarm-Siren/arduino-kicad-library>
 
 <br/>
 

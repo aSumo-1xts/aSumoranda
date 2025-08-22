@@ -1,11 +1,14 @@
 import DefaultTheme from "vitepress/theme-without-fonts";
 import type { Theme as ThemeConfig } from "vitepress";
-import "./style.css";
+import { useData, useRoute } from "vitepress";
 import googleAnalytics from "vitepress-plugin-google-analytics";
-import "viewerjs/dist/viewer.min.css";
 import imageViewer from "vitepress-plugin-image-viewer";
 import vImageViewer from "vitepress-plugin-image-viewer/lib/vImageViewer.vue";
-import { useRoute } from "vitepress";
+import codeblocksFold from 'vitepress-plugin-codeblocks-fold';
+import "./style.css";
+import "viewerjs/dist/viewer.min.css";
+import 'vitepress-plugin-codeblocks-fold/style/index.css';
+
 
 const Theme: ThemeConfig = {
   extends: DefaultTheme,
@@ -21,6 +24,8 @@ export default {
   },
   setup() {
     const route = useRoute(); // Get route
+    const { frontmatter } = useData(); // Get frontmatter
     imageViewer(route); // Using
+    codeblocksFold({ route, frontmatter }, true); // Using codeblocks-fold plugin
   },
 };

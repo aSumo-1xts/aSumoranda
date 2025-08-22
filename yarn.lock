@@ -1530,6 +1530,7 @@ __metadata:
     moment: "npm:^2.30.1"
     sitemap: "npm:^8.0.0"
     vitepress: "npm:^1.6.3"
+    vitepress-plugin-codeblocks-fold: "npm:^1.2.35"
     vitepress-plugin-google-analytics: "npm:^1.0.2"
     vitepress-plugin-image-viewer: "npm:^1.1.6"
     vitepress-plugin-mermaid: "npm:^2.0.17"
@@ -4098,6 +4099,13 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10c0/3322bd6d8da30cbc87b1b24cd14fdbca75abb36de81217d1062c8b4c574a1a0d28d11dfe23a3eed08b3d179d2bdc1510e0d7b9f3e1b722a45bd7631c7cec72eb
+  languageName: node
+  linkType: hard
+
+"vitepress-plugin-codeblocks-fold@npm:^1.2.35":
+  version: 1.2.35
+  resolution: "vitepress-plugin-codeblocks-fold@npm:1.2.35"
+  checksum: 10c0/ff986dc5434ef0993e39e2bafddcae091530a2b640ddd5889f77de528194b0fd77497d9ca4e3412bd064edb44bfa37ae6e8d9099f6b3b46522a151bdc8d44e2b
   languageName: node
   linkType: hard
 
