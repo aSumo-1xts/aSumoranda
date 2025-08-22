@@ -126,8 +126,8 @@ flowchart LR
 個人的な工夫として、MIDIチャンネルを指定する箇所ではあえて同ライブラリの内部関数を用い、冒頭の変数で一括変更できるようにしました。
 
 ::: code-group
-<<< @/snippets/heartLand_mother.ino{Arduino}
-<<< @/snippets/heartLand_daughter.ino{Arduino}
+<<< @/snippets/heartLand_mother.ino{cpp} [for mother]
+<<< @/snippets/heartLand_daughter.ino{cpp} [for daughter]
 :::
 
 mother側では、DAWからクロックを受けてLEDをメトロノーム的に光らせる機能を盛り込んでいます。詳細は[こちらの記事](./DAW2BPM)にて。
