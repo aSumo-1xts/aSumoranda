@@ -115,7 +115,7 @@ flowchart LR
 
 <ImageGroup
   :sources="[
-    '../images/240813_03.webp'
+    '/images/240813_03.webp'
   ]"
   type="big"
 />
@@ -145,8 +145,8 @@ mother側では、DAWからクロックを受けてLEDをメトロノーム的�
 
 <ImageGroup
   :sources="[
-    '../images/240813_04.webp',
-    '../images/240813_05.webp'
+    '/images/240813_04.webp',
+    '/images/240813_05.webp'
   ]"
   type="double"
   caption="←2D | 3D→"
@@ -160,16 +160,16 @@ mother側では、DAWからクロックを受けてLEDをメトロノーム的�
 
 <ImageGroup
   :sources="[
-    '../images/240813_06.webp',
-    '../images/240813_07.webp',
+    '/images/240813_06.webp',
+    '/images/240813_07.webp',
   ]"
   type="double"
 />
 
 <ImageGroup
   :sources="[
-    '../images/240813_08.webp',
-    '../images/240813_09.webp'
+    '/images/240813_08.webp',
+    '/images/240813_09.webp'
   ]"
   type="double"
 />

@@ -39,7 +39,7 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 
 和文の文献だけ、最後に`langid=Japanese`を追加しておきます。ここが唯一の手動ポイントなのでどうにか自動化したいところですが、論文1本の中に含まれる和文の文献の数って（少なくとも理工系においては）高が知れているという印象なので、まあ良いでしょう。
 
-```tex{20,28}
+```tex
 @article{Europian2001,
   title   = {Europian title},
   author  = {Europian, Author and Europian, Editor},
@@ -164,7 +164,7 @@ if ($^O eq 'linux') {
 
 <ImageGroup
   :sources="[
-    '../images/250610_01.webp',
+    '/images/250610_01.webp',
   ]"
   type="big"
 />
