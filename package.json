@@ -19,12 +19,15 @@
     "preview": "vitepress preview docs"
   },
   "dependencies": {
+    "@miletorix/vitepress-image-group": "^1.1.3",
     "markdown-it-mathjax3": "^4.3.2",
     "mermaid": "^11.6.0",
     "moment": "^2.30.1",
     "sitemap": "^8.0.0",
     "vitepress": "^1.6.3",
+    "vitepress-plugin-codeblocks-fold": "^1.2.35",
     "vitepress-plugin-google-analytics": "^1.0.2",
+    "vitepress-plugin-group-icons": "^1.6.3",
     "vitepress-plugin-image-viewer": "^1.1.6",
     "vitepress-plugin-mermaid": "^2.0.17",
     "vitepress-plugin-tabs": "^0.7.1",

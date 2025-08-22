@@ -25,7 +25,7 @@ tags:
 
 [「ぼくがかんがえたさいきょうの MIDIコントローラー」](./HeartLand)を作る過程で副産物が少しばかり生まれたので、可能な範囲で書き起こします。諸々の前提知識をすっ飛ばしますのでご了承ください。ソースコードはGitHubにも載せています。
 
-https://github.com/aSumo-1xts/MIDI-HARD/tree/main/Arduino/Clock-and-BPM
+<https://github.com/aSumo-1xts/MIDI-HARD/tree/main/Arduino/Clock-and-BPM>
 
 ## 環境
 
@@ -67,8 +67,8 @@ DAWによってはMIDIタイムコードという内部データ的なものを�
 ほとんど同じ仕組みで、MIDIUSBライブラリじゃなく[Control Surfaceライブラリ](https://github.com/tttapa/Control-Surface.git "Control Surface")を使って書くこともできました。Control Surfaceはめちゃくちゃ便利な神ライブラリです。
 
 ::: code-group
-<<< @/snippets/DAW2BPM_MIDIUSB.cpp{cpp}
-<<< @/snippets/DAW2BPM_Control-Surface.cpp{cpp}
+<<< @/snippets/DAW2BPM_MIDIUSB.ino{cpp} [MIDIUSB ver.]
+<<< @/snippets/DAW2BPM_Control-Surface.ino{cpp} [Control-Surface ver.]
 :::
 
 Control Surface版は動作の最中にArduino IDEのシリアルモニタを開閉すると何故か停止しますが、実際の使用状況ではそもそもIDEを開かないのでヨシ！としています。とは言えあまり健全ではないので、~~ゆるゆると原因調査中です~~諦めました！
@@ -77,15 +77,25 @@ Control Surface版は動作の最中にArduino IDEのシリアルモニタを開
 
 Liveの再生ボタンを押してBPM=120のクロックを読み込ませたところ、とりあえずBPMを教えてくれました（利用するライブラリに関わらず同様です）。しかしながら、BPM=120のはずなのに値がかなりブレブレです。このあと BPM=200とかになるともっと酷いことになりました。
 
-![ベーシックver](../images/240812_01.webp){width=75%}
+<ImageGroup
+  :sources="[
+    '../images/240812_01.webp',
+  ]"
+  type="big"
+/>
 
 ### 誤差低減 ver
 
-何とかならないかと思い、四捨五入やらローパスフィルタやら色々と試してみましたが結果はあまり芳しくなかったです（上、スクショ撮り忘れ）。ちなみにLiveよりStudio Oneの方がクロック精度は高いようで（下）、なぜなんだ～と思いつつ手を引くことにしました。
+何とかならないかと思い、四捨五入やらローパスフィルタやら色々と試してみましたが結果はあまり芳しくなかったです。ちなみにLiveよりStudio Oneの方がクロック精度は高いようで、なぜなんだ～と思いつつ手を引くことにしました。
 
-![誤差低減ver](../images/240812_02.webp){width=75%}
-
-![誤差低減ver（Studio One）](../images/240812_03.webp){width=75%}
+<ImageGroup
+  :sources="[
+    '../images/240812_02.webp',
+    '../images/240812_03.webp'
+  ]"
+  type="double"
+  caption="← Ableton Live | Studio One →"
+/>
 
 ## おわりに
 

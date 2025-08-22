@@ -26,7 +26,7 @@ tags:
 
 「ぼくがかんがえたさいきょうのMIDIコントローラー」を作ったので、その工程をまとめました。ソースコードや回路図はGitHubにも載せています。
 
-https://github.com/aSumo-1xts/MIDI-HARD/tree/main/HeartLand
+<https://github.com/aSumo-1xts/MIDI-HARD/tree/main/HeartLand>
 
 ## 環境
 
@@ -113,7 +113,12 @@ flowchart LR
 
 ### 回路
 
-![Schematic](../images/240813_03.webp){width=100%}
+<ImageGroup
+  :sources="[
+    '../images/240813_03.webp'
+  ]"
+  type="big"
+/>
 
 本記事冒頭のGitHubリポジトリにPDF版があるので、必要に応じてご参照ください。細かい話ですが、C1とC2のパスコンは実際には各Arduinoへ一つずつ使っています。
 
@@ -126,8 +131,8 @@ flowchart LR
 個人的な工夫として、MIDIチャンネルを指定する箇所ではあえて同ライブラリの内部関数を用い、冒頭の変数で一括変更できるようにしました。
 
 ::: code-group
-<<< @/snippets/heartLand_mother.cpp{cpp}
-<<< @/snippets/heartLand_daughter.cpp{cpp}
+<<< @/snippets/heartLand_mother.ino{cpp} [for mother]
+<<< @/snippets/heartLand_daughter.ino{cpp} [for daughter]
 :::
 
 mother側では、DAWからクロックを受けてLEDをメトロノーム的に光らせる機能を盛り込んでいます。詳細は[こちらの記事](./DAW2BPM)にて。
@@ -138,9 +143,14 @@ mother側では、DAWからクロックを受けてLEDをメトロノーム的�
 
 表側の基板（部品を載せないガワの方）にも両面GNDベタを施しておくと、強度がかなり上がってたわみにくくなります。これまた本当はノイズなどの影響を吟味すべきですが、とりあえず目先の実用性をとっています。
 
-![PCB](../images/240813_04.webp){wigth=100%}
-
-![3Dview](../images/240813_05.webp){wigth=100%}
+<ImageGroup
+  :sources="[
+    '../images/240813_04.webp',
+    '../images/240813_05.webp'
+  ]"
+  type="double"
+  caption="←2D | 3D→"
+/>
 
 ボタンはキーボード用のCherry MXのやつを採用することにしました。軸とキーキャップを選べて楽しいです。フェーダのフットプリントの選択に少し悩みましたが、KICADにデフォルトで入っている`Potentiometer_THT:Potentiometer_Bourns_PTA4543_Single_Slide`を使えば[秋月で売っているやつ](https://akizukidenshi.com/catalog/g/g109238/)がそのまま使えました。
 
@@ -148,13 +158,21 @@ mother側では、DAWからクロックを受けてLEDをメトロノーム的�
 
 基板発注はJLCPCBで行いました。はんだ付けをして、ねじを締めて、諸々を取り付けて完成です。
 
-![PIC01](../images/240813_06.webp){width=75%}
+<ImageGroup
+  :sources="[
+    '../images/240813_06.webp',
+    '../images/240813_07.webp',
+  ]"
+  type="double"
+/>
 
-![PIC02](../images/240813_07.webp){width=75%}
-
-![PIC03](../images/240813_08.webp){width=75%}
-
-![PIC04](../images/240813_09.webp){width=75%}
+<ImageGroup
+  :sources="[
+    '../images/240813_08.webp',
+    '../images/240813_09.webp'
+  ]"
+  type="double"
+/>
 
 製作途中の写真は撮り忘れました…。各部品の調達先をまとめておきます。
 
@@ -178,11 +196,11 @@ mother側では、DAWからクロックを受けてLEDをメトロノーム的�
 
 #### Arduino ProMicro
 
-https://github.com/g200kg/kicad-lib-arduino
+<https://github.com/g200kg/kicad-lib-arduino>
 
 #### Arduino Mega2560 ProMini
 
-https://github.com/Alarm-Siren/arduino-kicad-library
+<https://github.com/Alarm-Siren/arduino-kicad-library>
 
 <br/>
 
