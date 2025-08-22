@@ -25,7 +25,7 @@ tags:
 
 [「ぼくがかんがえたさいきょうの MIDIコントローラー」](./HeartLand)を作る過程で副産物が少しばかり生まれたので、可能な範囲で書き起こします。諸々の前提知識をすっ飛ばしますのでご了承ください。ソースコードはGitHubにも載せています。
 
-https://github.com/aSumo-1xts/MIDI-HARD/tree/main/Arduino/Clock-and-BPM
+<https://github.com/aSumo-1xts/MIDI-HARD/tree/main/Arduino/Clock-and-BPM>
 
 ## 環境
 
@@ -67,8 +67,8 @@ DAWによってはMIDIタイムコードという内部データ的なものを�
 ほとんど同じ仕組みで、MIDIUSBライブラリじゃなく[Control Surfaceライブラリ](https://github.com/tttapa/Control-Surface.git "Control Surface")を使って書くこともできました。Control Surfaceはめちゃくちゃ便利な神ライブラリです。
 
 ::: code-group
-<<< @/snippets/DAW2BPM_MIDIUSB.cpp{cpp}
-<<< @/snippets/DAW2BPM_Control-Surface.cpp{cpp}
+<<< @/snippets/DAW2BPM_MIDIUSB.ino{Arduino}
+<<< @/snippets/DAW2BPM_Control-Surface.ino{Arduino}
 :::
 
 Control Surface版は動作の最中にArduino IDEのシリアルモニタを開閉すると何故か停止しますが、実際の使用状況ではそもそもIDEを開かないのでヨシ！としています。とは言えあまり健全ではないので、~~ゆるゆると原因調査中です~~諦めました！
