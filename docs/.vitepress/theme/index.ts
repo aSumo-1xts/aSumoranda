@@ -1,11 +1,10 @@
 import DefaultTheme from "vitepress/theme-without-fonts";
 import type { Theme as ThemeConfig } from "vitepress";
 import { useData, useRoute } from "vitepress";
-import googleAnalytics from "vitepress-plugin-google-analytics";
-import imageViewer from "vitepress-plugin-image-viewer";
 import vImageViewer from "vitepress-plugin-image-viewer/lib/vImageViewer.vue";
-import codeblocksFold from 'vitepress-plugin-codeblocks-fold';
 import { ImageGroup } from '@miletorix/vitepress-image-group'
+import imageViewer from "vitepress-plugin-image-viewer";
+import codeblocksFold from 'vitepress-plugin-codeblocks-fold';
 import "./style.css";
 import "viewerjs/dist/viewer.min.css";
 import 'vitepress-plugin-codeblocks-fold/style/index.css';
@@ -20,9 +19,6 @@ const Theme: ThemeConfig = {
 export default {
   ...Theme,
   enhanceApp: (ctx) => {
-    googleAnalytics({
-      id: "G-2B1RQXT1NM",
-    });
     ctx.app.component("vImageViewer", vImageViewer);
     ctx.app.component('ImageGroup', ImageGroup);
   },
