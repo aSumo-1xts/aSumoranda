@@ -6,6 +6,7 @@ import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import { withMermaid } from "vitepress-plugin-mermaid";
 import { type DefaultTheme } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
 export default withMermaid({
   lang: "ja",
@@ -18,7 +19,13 @@ export default withMermaid({
     lineNumbers: true,
     config: (md) => {
       md.use(tabsMarkdownPlugin);
+      md.use(groupIconMdPlugin)
     },
+  },
+  vite: {
+    plugins: [
+      groupIconVitePlugin()
+    ],
   },
 
   themeConfig: {

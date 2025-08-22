@@ -8,6 +8,7 @@ import codeblocksFold from 'vitepress-plugin-codeblocks-fold';
 import "./style.css";
 import "viewerjs/dist/viewer.min.css";
 import 'vitepress-plugin-codeblocks-fold/style/index.css';
+import 'virtual:group-icons.css'
 
 
 const Theme: ThemeConfig = {
@@ -23,9 +24,9 @@ export default {
     ctx.app.component("vImageViewer", vImageViewer);
   },
   setup() {
-    const route = useRoute(); // Get route
-    const { frontmatter } = useData(); // Get frontmatter
-    imageViewer(route); // Using
-    codeblocksFold({ route, frontmatter }, true); // Using codeblocks-fold plugin
+    const route = useRoute();
+    const { frontmatter } = useData();
+    imageViewer(route);
+    codeblocksFold({ route, frontmatter }, true);
   },
 };
