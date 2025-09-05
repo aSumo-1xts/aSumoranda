@@ -6,7 +6,10 @@ import { resolve } from "node:path";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import { withMermaid } from "vitepress-plugin-mermaid";
 import { generateSidebar } from "vitepress-sidebar";
-import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+import {
+  groupIconMdPlugin,
+  groupIconVitePlugin,
+} from "vitepress-plugin-group-icons";
 
 export default withMermaid({
   lang: "ja",
@@ -19,13 +22,11 @@ export default withMermaid({
     lineNumbers: true,
     config: (md) => {
       md.use(tabsMarkdownPlugin);
-      md.use(groupIconMdPlugin)
+      md.use(groupIconMdPlugin);
     },
   },
   vite: {
-    plugins: [
-      groupIconVitePlugin()
-    ],
+    plugins: [groupIconVitePlugin()],
   },
 
   themeConfig: {
@@ -123,7 +124,7 @@ export default withMermaid({
     // フォントのプリロード
     const FontFile = assets.find(
       (file) =>
-        /(NotoSansJP-VariableFont_wght|ZenKakuGothicNew-Regular|MoralerspaceNeonHW-Regular)\.\w+\.woff2$/,
+        /(NotoSansJP-VariableFont_wght|ZenKakuGothicNew-Regular|MoralerspaceNeonHW-Regular)\.\w+\.woff2$/
     );
     if (FontFile) {
       head.push([

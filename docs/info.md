@@ -22,7 +22,7 @@ lastUpdated: false
 
 **Email**: 1xtelescope@gmail.com
 
-**Discord**: @aSumo-1xts
+**Discord**: @asumo_1xts
 
 ## 1x telescope
 
