@@ -1,17 +1,16 @@
-import { createContentLoader, HeadConfig } from "vitepress";
+import { createContentLoader, defineConfig, HeadConfig } from "vitepress";
 import { type DefaultTheme } from "vitepress";
 import { SitemapStream } from "sitemap";
 import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
-import { withMermaid } from "vitepress-plugin-mermaid";
 import { generateSidebar } from "vitepress-sidebar";
 import {
   groupIconMdPlugin,
   groupIconVitePlugin,
 } from "vitepress-plugin-group-icons";
 
-export default withMermaid({
+export default defineConfig({
   lang: "ja",
   base: "/",
   title: "aSumoranda",
@@ -153,10 +152,6 @@ export default withMermaid({
     // まとめて返す
     return head;
   },
-
-  // mermaidの設定
-  mermaid: {},
-  mermaidPlugin: { class: "mermaid my-class" },
 });
 
 function mySidebar(): DefaultTheme.SidebarItem[] {

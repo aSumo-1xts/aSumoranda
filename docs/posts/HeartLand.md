@@ -47,45 +47,12 @@ Ableton LiveでDJをやりたいんですが、MIDIコントローラーの選�
 
 ノブやフェーダやボタン、つまりは入力をたくさん用意したいので、単にArduino ボードを1台用意するだけでは端子が足りません。そこでArduinoを2台用意して「daughter」「mother」と名付け、以下のように役割を振りました。
 
-```mermaid
-flowchart LR
-  %% INPUT
-  subgraph INPUT["INPUT"]
-    direction TB
-    RE("Rotary Encoders")
-    BTN("Buttons")
-    POT("Potentiometers")
-  end
-
-  %% ARDUINO (two boards)
-  subgraph ARDUINO["Arduino"]
-    direction LR
-    MEGA("Mega2560 ProMini<br/>(daughter)")
-    PRO("ProMicro<br/>(mother)")
-    MEGA o-. "UART Serial MIDI" .-o PRO
-    MEGA -- CC/Note --> PRO
-  end
-
-  %% OUTPUT
-  subgraph OUTPUT["OUTPUT"]
-    direction TB
-    LED("LED")
-    PC("PC")
-  end
-
-  %% Connections from INPUT to Arduino
-  RE  -- Digital --> MEGA
-  BTN -- Digital --> MEGA
-  BTN -- Digital --> PRO
-  POT -- Analog --> PRO
-  POT -- Analog  --> MEGA
-
-  %% Arduino to OUTPUT / PC
-  PRO -- PWM --> LED
-  PRO o-. "USB MIDI" .-o PC
-  PRO -- CC/Note --> PC
-  PC -- "MIDI clock" --> PRO
-```
+<ImageGroup
+  :sources="[
+    '/images/240813_02.webp'
+  ]"
+  type="big"
+/>
 
 抽象度が高すぎて何のこっちゃという感じですが、ざっくり説明すると
 
