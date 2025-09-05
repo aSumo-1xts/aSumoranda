@@ -113,8 +113,18 @@ export default defineConfig({
     ["meta", { property: "og:site_name", content: "aSumoranda" }],
     ["meta", { property: "twitter:card", content: "summary" }],
     ["meta", { property: "twitter:site", content: "@asumo_1xts" }],
-    // ["script", { async: "true", src: "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"}],
-    // ["script", {}, "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-XXXXXXXXXX');"]
+    [
+      "script",
+      {
+        async: "true",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-P7T9JXS1NS",
+      },
+    ],
+    [
+      "script",
+      {},
+      "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-P7T9JXS1NS');",
+    ],
   ],
 
   transformHead({ assets, pageData }) {
