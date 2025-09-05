@@ -1,15 +1,18 @@
 @font-face {
   font-family: "myMainFont";
+  font-display: swap;
   src: url("./fonts/NotoSansJP-VariableFont_wght.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "mySubFont";
+  font-display: swap;
   src: url("./fonts/ZenKakuGothicNew-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "myCodeFont";
+  font-display: swap;
   src: url("./fonts/MoralerspaceNeonHW-Regular.woff2") format("woff2");
 }
 
