@@ -6,7 +6,7 @@ title: BibLaTeXで欧文和文を混ぜる
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 date: 2025-06-10
-permalink: "https://blog.1xtelescope.com/posts/BibLaTeX-JP.html"
+permalink: "https://blog.1xtelescope.com/posts/BibLaTeXJP.html"
 
 prev: false
 next: false
