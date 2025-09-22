@@ -1,6 +1,0 @@
-docs/.vitepress/** linguist-vendored=false linguist-detectable=true
-
-docs/public/** binary=true
-
-**/*.md linguist-documentation=true
-docs/snippets/** linguist-documentation=true
