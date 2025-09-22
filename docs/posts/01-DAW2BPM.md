@@ -79,7 +79,7 @@ Liveの再生ボタンを押してBPM=120のクロックを読み込ませたと
 
 <ImageGroup
   :sources="[
-    '/images/240812_01.webp',
+    '/images/01-01.webp',
   ]"
   type="big"
 />
@@ -90,8 +90,8 @@ Liveの再生ボタンを押してBPM=120のクロックを読み込ませたと
 
 <ImageGroup
   :sources="[
-    '/images/240812_02.webp',
-    '/images/240812_03.webp'
+    '/images/01-02.webp',
+    '/images/01-03.webp'
   ]"
   type="double"
   caption="← Ableton Live | Studio One →"
