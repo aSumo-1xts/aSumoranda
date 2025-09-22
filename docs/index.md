@@ -12,18 +12,18 @@ hero:
     alt: aSumoranda
 
 features:
-  - icon: 🏛️
-    title: BibLaTeXで欧文和文を混ぜる
-    details: LaTeX
-    link: ./posts/BibLaTeX-JP
-  - icon: 📚
-    title: 2025年に読んだもの
-    details: 雑記
-    link: ./posts/book2025
   - icon: 🎛️
     title: 理想のMIDIコンを自作する
     details: その他の工作 | MIDI | Arduino | C/C++
-    link: ./posts/HeartLand
+    link: ./posts/02-HeartLand
+  - icon: 🏛️
+    title: BibLaTeXで欧文和文を混ぜる
+    details: LaTeX
+    link: ./posts/03-BibLaTeX-JP
+  - icon: 📚
+    title: 2025年に読んだもの
+    details: 雑記
+    link: ./posts/04-book2025
 
 permalink: "https://blog.1xtelescope.com"
 ---

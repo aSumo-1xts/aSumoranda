@@ -6,7 +6,7 @@ title: ArduinoでDAWからBPMを取得
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 date: 2024-08-12
-permalink: "https://blog.1xtelescope.com/posts/DAW2BPM.html"
+permalink: "https://blog.1xtelescope.com/posts/01-DAW2BPM.html"
 
 prev: false
 next: false
@@ -23,7 +23,7 @@ tags:
 
 ## はじめに
 
-[「ぼくがかんがえたさいきょうの MIDIコントローラー」](./HeartLand)を作る過程で副産物が少しばかり生まれたので、可能な範囲で書き起こします。諸々の前提知識をすっ飛ばしますのでご了承ください。ソースコードはGitHubにも載せています。
+[「ぼくがかんがえたさいきょうの MIDIコントローラー」](./02-HeartLand)を作る過程で副産物が少しばかり生まれたので、可能な範囲で書き起こします。諸々の前提知識をすっ飛ばしますのでご了承ください。ソースコードはGitHubにも載せています。
 
 <https://github.com/aSumo-1xts/MIDI-HARD/tree/main/Arduino/Clock-and-BPM>
 
