@@ -19,7 +19,7 @@ features:
   - icon: 🏛️
     title: BibLaTeXで欧文和文を混ぜる
     details: LaTeX
-    link: ./posts/03-BibLaTeX-JP
+    link: ./posts/03-BibLaTeXJP
   - icon: 📚
     title: 2025年に読んだもの
     details: 雑記
