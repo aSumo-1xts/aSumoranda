@@ -6,7 +6,7 @@ title: 理想のMIDIコンを自作する
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 date: 2024-09-15
-permalink: "https://blog.1xtelescope.com/posts/HeartLand.html"
+permalink: "https://blog.1xtelescope.com/posts/02-HeartLand.html"
 
 prev: false
 next: false
@@ -57,7 +57,7 @@ Ableton LiveでDJをやりたいんですが、MIDIコントローラーの選�
 
 <ImageGroup
   :sources="[
-    '/images/240813_02.webp'
+    '/images/02-01.webp'
   ]"
   type="big"
 />
@@ -90,7 +90,7 @@ Ableton LiveでDJをやりたいんですが、MIDIコントローラーの選�
 
 <ImageGroup
   :sources="[
-    '/images/240813_03.webp'
+    '/images/02-02.webp'
   ]"
   type="big"
 />
@@ -110,7 +110,7 @@ Ableton LiveでDJをやりたいんですが、MIDIコントローラーの選�
 <<< @/snippets/heartLand_daughter.ino{cpp} [for daughter]
 :::
 
-mother側では、DAWからクロックを受けてLEDをメトロノーム的に光らせる機能を盛り込んでいます。詳細は[こちらの記事](./DAW2BPM)にて。
+mother側では、DAWからクロックを受けてLEDをメトロノーム的に光らせる機能を盛り込んでいます。詳細は[こちらの記事](./01-DAW2BPM)にて。
 
 ### 基板
 
@@ -120,8 +120,8 @@ mother側では、DAWからクロックを受けてLEDをメトロノーム的�
 
 <ImageGroup
   :sources="[
-    '/images/240813_04.webp',
-    '/images/240813_05.webp'
+    '/images/02-03.webp',
+    '/images/02-04.webp'
   ]"
   type="double"
   caption="←2D | 3D→"
@@ -135,16 +135,16 @@ mother側では、DAWからクロックを受けてLEDをメトロノーム的�
 
 <ImageGroup
   :sources="[
-    '/images/240813_06.webp',
-    '/images/240813_07.webp',
+    '/images/02-05.webp',
+    '/images/02-06.webp',
   ]"
   type="double"
 />
 
 <ImageGroup
   :sources="[
-    '/images/240813_08.webp',
-    '/images/240813_09.webp'
+    '/images/02-07.webp',
+    '/images/02-08.webp'
   ]"
   type="double"
 />
