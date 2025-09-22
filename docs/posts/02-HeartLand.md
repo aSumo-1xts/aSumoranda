@@ -102,7 +102,7 @@ Ableton LiveでDJをやりたいんですが、MIDIコントローラーの選�
 <<< @/snippets/heartLand_daughter.ino{cpp} [for daughter]
 :::
 
-mother側では、DAWからクロックを受けてLEDをメトロノーム的に光らせる機能を盛り込んでいます。詳細は[こちらの記事](./DAW2BPM)にて。
+mother側では、DAWからクロックを受けてLEDをメトロノーム的に光らせる機能を盛り込んでいます。詳細は[こちらの記事](./01-DAW2BPM)にて。
 
 ### 基板
 
