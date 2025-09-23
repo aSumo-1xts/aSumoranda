@@ -13,10 +13,11 @@ next: false
 
 tags:
   - modpedals
+  - pic
   - ccpp
 ---
 
-[エフェクター改造](../tags/modpedals) | [C/C++](../tags/ccpp.md)
+[エフェクター改造](../tags/modpedals) | [PIC](../tags/pic.md) | [C/C++](../tags/ccpp.md)
 
 # DOD FX-96のトレイルバイパス化
 
