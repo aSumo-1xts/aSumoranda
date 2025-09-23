@@ -4,7 +4,7 @@ layout: doc
 title: その他の工作
 description: 「その他の工作」のタグが付いた記事
 
-order: 9
+order: 8
 permalink: "https://blog.1xtelescope.com/tags/otherdiy.html"
 
 prev: false
