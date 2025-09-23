@@ -15,7 +15,7 @@ tags:
   - latex
 ---
 
-[LaTeX](../tags/latex.md)
+[LaTeX](../tags/latex)
 
 # BibLaTeXで欧文和文を混ぜる
 

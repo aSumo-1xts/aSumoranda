@@ -18,7 +18,7 @@ tags:
   - otherdiy
 ---
 
-[その他の工作](../tags/otherdiy) | [MIDI](../tags/midi) | [Arduino](../tags/arduino) | [C/C++](../tags/ccpp.md)
+[その他の工作](../tags/otherdiy) | [MIDI](../tags/midi) | [Arduino](../tags/arduino) | [C/C++](../tags/ccpp)
 
 # 理想のMIDIコンを自作する
 

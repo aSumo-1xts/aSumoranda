@@ -17,7 +17,7 @@ tags:
   - midi
 ---
 
-[MIDI](../tags/midi) | [Arduino](../tags/arduino) | [C/C++](../tags/ccpp.md)
+[MIDI](../tags/midi) | [Arduino](../tags/arduino) | [C/C++](../tags/ccpp)
 
 # ArduinoでDAWからBPMを取得
 
