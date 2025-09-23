@@ -32,7 +32,7 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 
 ## 環境
 
-- Overleaf / Ubuntu （TeXLive-full）
+- Overleaf
 - upLaTeX（LuaLaTeXだともう少し別な方法がありそう…）
 
 ## bibファイル
