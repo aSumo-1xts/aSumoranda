@@ -43,9 +43,9 @@ tags:
 
 ### MPLAB X
 
-PICKIT4 or 5をお持ちのブルジョワの皆様は、普通に最新版をインストールしてください。庶民の筆者はPICKIT3を使っているので、PICKIT3に対応している最後のバージョンであるv6.20をインストールします。[ここ](https://www.microchip.com/en-us/tools-resources/archives/mplab-ecosystem)から過去のバージョンのインストーラをダウンロードできます。
+既にPICKIT4 or 5をお持ちのブルジョワの皆様は、普通に最新版をインストールしてください。そうでない方は、PICKIT3（安い！あとで登場します）に対応している最後のバージョンであるv6.20のインストールをおすすめします。[ここ](https://www.microchip.com/en-us/tools-resources/archives/mplab-ecosystem)から過去のバージョンのインストーラをダウンロードできます。
 
-なお今回の主役は拡張機能とコンパイラなのでIDE（Integrated Development Environment）は不要で、コンパイルされたhexファイルをチップに書き込むために最低限IPE（Integrated Programming Environment）が必要です。これら二つのインストーラは共通ですが、実行後のセットアップ画面で「IDEをインストールしない」という選択が可能です。もっともPCのストレージに余裕があれば、何も考えずに「Next」を連打しても構いません。
+なお今回の主役は拡張機能とコンパイラなのでIDE（Integrated Development Environment）は不要で、コンパイルされたhexファイルをチップに書き込むために最低限IPE（Integrated Programming Environment）が必要です。これら二つのインストーラは共通ですが、実行後のセットアップ画面で「IDEをインストールしない」という選択をすることができます。もっともPCのストレージに余裕があれば、何も考えずに「Next」を連打しても構いません。
 
 <ImageGroup
   :sources="[
@@ -73,7 +73,7 @@ PICKIT4 or 5をお持ちのブルジョワの皆様は、普通に最新版を�
 
 試していないので、これが究極な最小構成かどうかは分かりません。Microchip社はひとまとまりの機能ごとに拡張機能を分けてリリースする方針らしいですが、なかなか一長一短であると感じます。
 
-元々MPLABX IDEを使っていてVScode環境に移行したい人のために、
+元々MPLABX IDEを使っていてVScode環境に移行したい人には、
 
 - Project Importer for MPLAB
 
@@ -81,9 +81,9 @@ PICKIT4 or 5をお持ちのブルジョワの皆様は、普通に最新版を�
 
 ## プロジェクトの作成
 
-サイドバーのMPLABアイコンをクリックして、「新しいプロジェクト」を始めます。今回のプロジェクト名は「Lchika_12F675」としました。12F675とはすなわちマイコンにPIC12F675を使うよということですが、これは筆者がPIC12F675を大量に在庫しているからであり、新しく手を出す人はもっと新しくて安いものを選ぶのが吉です。
+サイドバーのMPLABアイコンをクリックして、「新しいプロジェクト」を始めます。今回のプロジェクト名は「Lchika_12F675」としました。12F675とはすなわちマイコンにPIC12F675を使うよということですが、これは筆者がPIC12F675を大量に在庫しているからであり、新しく手を出す人はもっと新しくて安いものを選んでも良いと思います。
 
-あとは「デフォルトの場所」「マイコンの型番（ここではPIC12F675）」「コンパイラ（XC8が出てくるはず）」を順に選択すれば、Userディレクトリ内に`MPLABProjects`なるディレクトリが追加され、さらにその中に`Lchika_12F675`なるプロジェクト用ディレクトリが作成されます。VScode上でこのディレクトリに移動すると、何やらそれっぽいディレクトリやファイルがあるはずです。
+あとは「デフォルトの場所」「マイコンの型番（ここではPIC12F675）」「コンパイラ（XC8が出てくるはず）」を順に選択すれば、`Users/MPLABProjects`の中に`Lchika_12F675`なるプロジェクト用ディレクトリが作成されます。VScode上でここに移動すると、何やらそれっぽいものができているはずです。
 
 <ImageGroup
   :sources="[
@@ -109,11 +109,13 @@ C/C++を触ったことがある方の多くが、Microsoft製の「C/C++」な�
 
 ### サンプルコード
 
-シンプルにLEDを点滅させます。
+プロジェクト名の通り、LEDをチカチカさせます。
+
+TODO: コードの追加
 
 ## コンパイル
 
-VScode上のコマンドパレット（`F1`キー）から「MPLAB」と入力すると、「CMAKE: ビルドします」という候補が出てくるのでこれを実行してみます。
+VScode上のコマンドパレット（`F1`キー）から「MPLAB」と入力すると「CMAKE: ビルドします」という候補が出てくるので、これを実行します。すると`.out/Lchica`ディレクトリに`default.hex`が生成されるはずです。
 
 <ImageGroup
   :sources="[
@@ -122,15 +124,17 @@ VScode上のコマンドパレット（`F1`キー）から「MPLAB」と入力�
   type="big"
 />
 
-すると、`.out/Lchica`ディレクトリに`default.hex`が生成されます。これをマイコンに書き込みます。
+TODO: PICKIT3とマイコンの配線図
 
 ## 書き込み
 
+今しがた生成された`default.hex`をマイコンに書き込みます。
+
 ### PICKIT3
 
-前述の通り、筆者は書き込みにはPICKIT3の~~パチモン~~互換品を使っています。今のところAliExpressやAmazonにて3000円前後で入手できて、最もリーズナブルであると思われます。
+庶民の筆者は書き込みにはPICKIT3の~~パチモン~~互換品を使っています。今のところAliExpressやAmazonにて3000円前後で入手できて、最もリーズナブルであると思われます。
 
-マイコンへ書き込む際にはマイコンに+5Vを与えてやる必要があり、これは本来であればPICKIT3とは別で電源（乾電池とか）を用意してやる必要があるのですが、裏ワザとしてPICKIT3本体に供給されているUSBから来た+5Vをそのまま拝借する民間療法があります。なんちゃってバスパワー化です。詳しくは書きませんが、PICKIT3の基板上で適宜ジャンパを1本追加すれば良いです。
+（少なくともPIC12F675の場合）書き込みの際にはマイコンに+5Vを与えてやる必要があり、これは本来であればPICKIT3とは別で電源（乾電池とか）を用意してやる必要があるのですが、裏ワザとしてPICKIT3本体に供給されている+5Vをそのまま拝借する民間療法があります。なんちゃってバスパワー化です。詳しくは書きませんが、PICKIT3の基板上で適宜ジャンパを1本追加すれば良いです。
 
 <ImageGroup
   :sources="[
@@ -142,8 +146,39 @@ VScode上のコマンドパレット（`F1`キー）から「MPLAB」と入力�
 
 ### CLIツール
 
-hexファイルが出来上がりました。MPLABX IPEを立ち上げてGUIで書き込んでも良いのですが、このIPEにはコマンドラインで使える書き込み用のexeファイルが付属しており、これを使うと非常に楽です。`C:\Program Files\Microchip\MPLABX\v6.20\mplab_platform\mplab_ipe`ディレクトリに`ipecmd.exe`なるファイルがあることを確認してください。
+MPLABX IPEを立ち上げてGUIで書き込んでも良いのですが、このIPEにはコマンドラインで使える書き込み用のexeファイルが付属しています。`C:\Program Files\Microchip\MPLABX\v6.20\mplab_platform\mplab_ipe`に`ipecmd.exe`なるexeファイルがあることを確認してください。これを下記のコマンドでVScode上のターミナルから呼び出せば、VScodeに張り付いたまま書き込み作業まで完結できます。
+
+::: code-group
+<<< @/snippets/06-writehex.ps1{powershell} [writehex.ps1]
+:::
+
+長いので筆者はps1ファイルとして実行しています。ファイル内で改行すると、正しいはずなのに何故か怒られてしまうのが目下の不思議です。
+
+さて、上手くいけば次のようにして書き込みが完了します。failedになった場合は、一度PICKIT3を繋ぎなおすと治ることがあります。
 
 ```powershell
-& "C:\Program Files\Microchip\MPLABX\v6.20\mplab_platform\mplab_ipe\ipecmd.exe" --% -P12F675 -TPPK3 -M -F"C:\Users\asumo\MPLABProjects\Lchica\out\Lchica\default.hex"
+PS C:\Users\asumo\MPLABProjects\Lchica_PIC12F675> .\writehex.ps1
+DFP Version Used : PIC10-12Fxxx_DFP,1.8.184,Microchip
+*****************************************************
+Connecting to MPLAB PICkit 3...
+Currently loaded firmware on PICkit 3
+Firmware Suite Version.....01.56.09
+Firmware type..............Midrange
+Target voltage detected
+Target device PIC12F675 found.
+Device Revision ID = 10
+Device Erased...
+Programming...
+The following memory area(s) will be programmed:
+program memory: start address = 0x0, end address = 0x3ff
+Programming/Verify complete
+PICKIT3 Program Report
+2025-09-23, 06:04:51
+Device Type:PIC12F675
+Program Succeeded.
+Operation Succeeded
 ```
+
+## おわりに
+
+無事にLEDはチカチカしたでしょうか。
