@@ -5,7 +5,7 @@ emoji: 🎛️
 title: 理想のMIDIコンを自作する
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
-date: 2024-09-15
+date: 2024-08-18
 permalink: "https://blog.1xtelescope.com/posts/02-HeartLand.html"
 
 prev: false

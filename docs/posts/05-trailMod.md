@@ -5,7 +5,7 @@ emoji: 🔨
 title: DOD FX96のトレイルバイパス化
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
-date: 2025-08-18
+date: 2025-09-24
 permalink: "https://blog.1xtelescope.com/posts/05-trailMod.html"
 
 prev: false
@@ -17,7 +17,7 @@ tags:
   - ccpp
 ---
 
-[エフェクター改造](../tags/modpedals) | [PIC](../tags/pic) | [C/C++](../tags/ccpp)
+[エフェクター改造](../tags/modpedals) | [PIC](../tags/pic.md) | [C/C++](../tags/ccpp.md)
 
 # DOD FX-96のトレイルバイパス化
 
@@ -111,7 +111,7 @@ tags:
 
 ::: tip
 
-エフェクター全体の駆動電圧が+9Vで固定ならばQ2は取り外さずとも事足ります。このときバイアス電圧は+4.5Vなので、マイコンからQ2に直接Q2に+5V（HIGH）/0V（LOW）を与えるだけでQ2のON/OFFを制御できるからです。しかしこの方式でエフェクター全体の駆動電圧が+10Vを超えると、バイアス電圧が+5V以上になるのでQ2で常に$V_\mathrm{S}\geq V_\mathrm{G}$となってしまい制御が効きません。
+エフェクター全体の駆動電圧が+9Vで固定ならばQ2は取り外さずとも事足ります。このときバイアス電圧は+4.5Vなので、マイコンからQ2に+5V（HIGH）/0V（LOW）を与えるだけでQ2のON/OFFを制御できるからです。しかしこの方式でエフェクター全体の駆動電圧が+10Vを超えると、バイアス電圧が+5V以上になるのでQ2で常に$V_\mathrm{S}\geq V_\mathrm{G}$となってしまい制御が効きません。
 
 このエフェクターでは駆動電圧がディレイ音に大きく影響するので、+9Vより大きい電圧で駆動することにかなり意義があります。従って、どうせならQ2を取り外す今回の方式の方がベターかなと思います。
 
@@ -124,8 +124,8 @@ tags:
 電源投入時のオプション設定（オルタネイト/モーメンタリなど）を含めてしまっているので少し量が多くなってしまっていますが、重要な処理は`TURN()`、`scanModeSw()`あたりでしょうか。具体的に何が起こっているのかの説明はコメントアウトに託しました。
 
 ::: code-group
-<<< @/snippets/05-header.h{c} [header.h]
 <<< @/snippets/05-main.c{c} [main.c]
+<<< @/snippets/05-header.h{c} [header.h]
 <<< @/snippets/05-common.c{c} [common.c]
 <<< @/snippets/05-PIC12F6XX.c{c} [PIC12F6XX.c]
 :::
