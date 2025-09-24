@@ -5,7 +5,7 @@ emoji: 🔨
 title: DOD FX96のトレイルバイパス化
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
-date: 2025-08-18
+date: 2025-09-24
 permalink: "https://blog.1xtelescope.com/posts/05-trailMod.html"
 
 prev: false
