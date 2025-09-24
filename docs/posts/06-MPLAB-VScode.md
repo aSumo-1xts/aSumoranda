@@ -140,9 +140,9 @@ VScode上のコマンドパレット（`F1`キー）から「MPLAB」と入力�
   caption="筆者は剥き身で使っています。アダプターを自作してかなり便利になりました。"
 />
 
-### CLIで完結
+### CLIツール
 
-hexファイルが出来上がったのでMPLABX IPEを立ち上げてGUIで書き込んでも良いのですが、このIPEにはコマンドラインで使える書き込み用のexeファイルが付属しており、これを使うと非常に楽です。`C:\Program Files\Microchip\MPLABX\v6.20\mplab_platform\mplab_ipe`ディレクトリに`ipecmd.exe`なるファイルがあることを確認してください。
+hexファイルが出来上がりました。MPLABX IPEを立ち上げてGUIで書き込んでも良いのですが、このIPEにはコマンドラインで使える書き込み用のexeファイルが付属しており、これを使うと非常に楽です。`C:\Program Files\Microchip\MPLABX\v6.20\mplab_platform\mplab_ipe`ディレクトリに`ipecmd.exe`なるファイルがあることを確認してください。
 
 ```powershell
 & "C:\Program Files\Microchip\MPLABX\v6.20\mplab_platform\mplab_ipe\ipecmd.exe" --% -P12F675 -TPPK3 -M -F"C:\Users\asumo\MPLABProjects\Lchica\out\Lchica\default.hex"
