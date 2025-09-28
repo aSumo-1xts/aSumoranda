@@ -10,4 +10,4 @@
 #pragma config CP = ON         // プログラム保護        使用
 #pragma config CPD = ON        // データ保護            使用
 
-#define LED GP5  // LEDへの出力
+#define LED GP5

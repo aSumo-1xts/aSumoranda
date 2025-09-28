@@ -280,7 +280,7 @@ NormalTrueBypass.
     '/images/06-10.webp'
   ]"
   type="big"
-  caption="629にする？675にする？それとも…"
+  caption="おかえりなさい！629にする？675にする？それとも…"
 />
 
 ## おわりに
