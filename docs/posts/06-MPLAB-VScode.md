@@ -211,6 +211,7 @@ Operation Succeeded
     '/images/06-09.webp',
   ]"
   type="double"
+  caption="← 「新しいプロジェクト」 | 「既存のフォルダ」 →"
 />
 
 すると`.vscode/`に新たに`Lchika_12F1822.mplab.json`が生成されます。ややこしいので、今いるルートディレクトリ`Lchika_12F675/`は単に「Lchika」と改名してしまいましょう。こうして、2つのプロジェクトが混じって以下のような構成になりました。
