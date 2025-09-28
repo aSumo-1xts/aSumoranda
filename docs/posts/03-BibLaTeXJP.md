@@ -15,7 +15,7 @@ tags:
   - latex
 ---
 
-[LaTeX](../tags/latex.md)
+[LaTeX](../tags/latex)
 
 # BibLaTeXで欧文和文を混ぜる
 
@@ -32,7 +32,7 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 
 ## 環境
 
-- Overleaf / Ubuntu （TeXLive-full）
+- Overleaf
 - upLaTeX（LuaLaTeXだともう少し別な方法がありそう…）
 
 ## bibファイル

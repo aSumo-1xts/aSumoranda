@@ -18,16 +18,14 @@ tags:
   - otherdiy
 ---
 
-[その他の工作](../tags/otherdiy) | [MIDI](../tags/midi) | [Arduino](../tags/arduino) | [C/C++](../tags/ccpp.md)
+[その他の工作](../tags/otherdiy) | [MIDI](../tags/midi) | [Arduino](../tags/arduino) | [C/C++](../tags/ccpp)
 
 # 理想のMIDIコンを自作する
 
 ::: warning
-
 正しい情報を記載するよう努めていますが、それはそれとして当方は一切の責任を負いかねます。
 
 いかなる作業も自己責任で行っていただくようお願いいたします。
-
 :::
 
 ## はじめに
