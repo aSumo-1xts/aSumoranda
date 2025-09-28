@@ -230,7 +230,7 @@ Lchika. # （元「Lchika_12F675」）
 ...
 ```
 
-勘の良い方はお察しの通り、マイコン間で共通の関数は括りだして一元的な管理をしようという魂胆です。例として、筆者の[とあるリポジトリ](https://github.com/aSumo-1xts/NormalTrueBypass_PIC)では以下のような構成になっています。
+お察しの通り、マイコン間で共通の関数は括りだして一元的な管理をしようという魂胆です。例として、筆者の[とあるリポジトリ](https://github.com/aSumo-1xts/NormalTrueBypass_PIC)では以下のような構成になっています。
 
 ```powershell
 NormalTrueBypass.
@@ -256,7 +256,7 @@ NormalTrueBypass.
             PIC12F6XX.h
 ```
 
-アイコン間で共通の処理は`common.c`に括りだして、マイコンごとに書き方が異なる部分を`PIC12F1822/`や`PIC12F6XX/`で吸収しています。ここで先述の通り`.vscode/*.mplab.json`をそれぞれ編集しておけば、コンパイル時にそのマイコンに必要なソースファイルだけを取捨選択できます。例として、上記リポジトリの`.vscode/PIC12F1822.mplab.json`は以下のようになっています。
+マイコン間で共通の処理は`common.c`に括りだして、マイコンごとに書き方が異なる部分を`PIC12F1822/`や`PIC12F6XX/`で吸収しています。ここで先述の通り`.vscode/*.mplab.json`をそれぞれ編集しておけば、コンパイル時にそのマイコンに必要なソースファイルだけを取捨選択できます。例として、上記リポジトリの`.vscode/PIC12F1822.mplab.json`は以下のようになっています。
 
 ``` json [NormalTrueBypass/.vscode/PIC12F1822.mplab.json]
 ...
@@ -285,4 +285,4 @@ NormalTrueBypass.
 
 ## おわりに
 
-思ったより長くなってしまいましたが、作業をVScode上で完結できて嬉しいということが伝わったなら幸いです。VScode大好き！
+思ったより長くなってしまいましたが、全工程をVScode上で完結できて嬉しいということが伝わったなら幸いです。VScode大好き！
