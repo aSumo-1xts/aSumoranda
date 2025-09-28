@@ -5,7 +5,7 @@ emoji: 🔠
 title: MPLAB VScode Extention入門
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
-date: 2029-09-23
+date: 2026-09-23
 permalink: "https://blog.1xtelescope.com/posts/06-MPLAB-VScode.html"
 
 prev: false

@@ -12,14 +12,14 @@ hero:
     alt: aSumoranda
 
 features:
-  - icon: 🎛️
-    title: 理想のMIDIコンを自作する
-    details: その他の工作 | MIDI | Arduino | C/C++
-    link: ./posts/02-HeartLand
-  - icon: 🏛️
-    title: BibLaTeXで欧文和文を混ぜる
-    details: LaTeX
-    link: ./posts/03-BibLaTeXJP
+  - icon: 🔠
+    title: MPLAB VScode Extention入門
+    details: 環境構築 | PIC | C/C++
+    link: ./posts/06-MPLAB-VScode
+  - icon: 🔨
+    title: DOD FX96のトレイルバイパス化
+    details: エフェクター改造 | PIC | C/C++
+    link: ./posts/05-trailMod
   - icon: 📚
     title: 2025年に読んだもの
     details: 雑記
