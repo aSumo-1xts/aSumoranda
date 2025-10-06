@@ -33,7 +33,6 @@ Write-Host "  - Google Drive from WinGet"
 Write-Host "  - UniGetUI (formerly WingetUI) from WinGet"
 Write-Host "  - Obsidian from WinGet"
 Write-Host "  - Rufus from WinGet"
-Write-Host "  - KiCad from WinGet"
 Write-Host "  - OneCommander from WinGet"
 Write-Host "  - Notion from WinGet"
 Write-Host "  - Google Chrome from WinGet"
@@ -57,7 +56,6 @@ $commands= @(
     'cmd.exe /C winget.exe install --id "MartiCliment.UniGetUI" --exact --source winget --accept-source-agreements --disable-interactivity --silent --accept-package-agreements --force',
     'cmd.exe /C winget.exe install --id "Obsidian.Obsidian" --exact --source winget --accept-source-agreements --disable-interactivity --silent --accept-package-agreements --force',
     'cmd.exe /C winget.exe install --id "Rufus.Rufus" --exact --source winget --accept-source-agreements --disable-interactivity --silent --accept-package-agreements --force',
-    'cmd.exe /C winget.exe install --id "KiCad.KiCad" --exact --source winget --accept-source-agreements --disable-interactivity --silent --accept-package-agreements --force',
     'cmd.exe /C winget.exe install --id "MilosParipovic.OneCommander" --exact --source winget --accept-source-agreements --disable-interactivity --silent --accept-package-agreements --force',
     'cmd.exe /C winget.exe install --id "Notion.Notion" --exact --source winget --accept-source-agreements --disable-interactivity --silent --accept-package-agreements --force',
     'cmd.exe /C winget.exe install --id "Google.Chrome" --exact --source winget --accept-source-agreements --disable-interactivity --silent --accept-package-agreements --force'
