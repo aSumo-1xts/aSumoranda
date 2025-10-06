@@ -57,7 +57,7 @@ tags:
 
 <ImageGroup
   :sources="[
-    '/images/05-01.webp',
+    '/images/2025/05-01.webp',
   ]"
   type="big"
 />
@@ -87,7 +87,7 @@ tags:
 
 <ImageGroup
   :sources="[
-    '/images/05-02.webp',
+    '/images/2025/05-02.webp',
   ]"
   type="big"
 />
@@ -98,8 +98,8 @@ tags:
 
 <ImageGroup
   :sources="[
-    '/images/05-03.webp',
-    '/images/05-04.webp',
+    '/images/2025/05-03.webp',
+    '/images/2025/05-04.webp',
   ]"
   type="double"
   caption="← Q2 | C41 →"
@@ -128,8 +128,8 @@ tags:
 
 <ImageGroup
   :sources="[
-    '/images/05-05.webp',
-    '/images/05-06.webp',
+    '/images/2025/05-05.webp',
+    '/images/2025/05-06.webp',
   ]"
   type="double"
 />

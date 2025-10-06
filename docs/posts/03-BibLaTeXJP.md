@@ -164,7 +164,7 @@ if ($^O eq 'linux') {
 
 <ImageGroup
   :sources="[
-    '/images/03-01.webp',
+    '/images/2025/03-01.webp',
   ]"
   type="big"
 />

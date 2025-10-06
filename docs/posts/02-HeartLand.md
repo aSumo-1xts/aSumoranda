@@ -55,7 +55,7 @@ Ableton LiveでDJをやりたいんですが、MIDIコントローラーの選�
 
 <ImageGroup
   :sources="[
-    '/images/02-01.webp'
+    '/images/2024/02-01.webp'
   ]"
   type="big"
 />
@@ -88,7 +88,7 @@ Ableton LiveでDJをやりたいんですが、MIDIコントローラーの選�
 
 <ImageGroup
   :sources="[
-    '/images/02-02.webp'
+    '/images/2024/02-02.webp'
   ]"
   type="big"
 />
@@ -118,8 +118,8 @@ mother側では、DAWからクロックを受けてLEDをメトロノーム的�
 
 <ImageGroup
   :sources="[
-    '/images/02-03.webp',
-    '/images/02-04.webp'
+    '/images/2024/02-03.webp',
+    '/images/2024/02-04.webp'
   ]"
   type="double"
   caption="←2D | 3D→"
@@ -133,16 +133,16 @@ mother側では、DAWからクロックを受けてLEDをメトロノーム的�
 
 <ImageGroup
   :sources="[
-    '/images/02-05.webp',
-    '/images/02-06.webp',
+    '/images/2024/02-05.webp',
+    '/images/2024/02-06.webp',
   ]"
   type="double"
 />
 
 <ImageGroup
   :sources="[
-    '/images/02-07.webp',
-    '/images/02-08.webp'
+    '/images/2024/02-07.webp',
+    '/images/2024/02-08.webp'
   ]"
   type="double"
 />
