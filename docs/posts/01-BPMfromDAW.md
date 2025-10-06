@@ -6,7 +6,7 @@ title: ArduinoでDAWからBPMを取得
 description: ｱｽﾓのﾒﾓﾗﾝﾀﾞ、ｱｽﾓﾗﾝﾀﾞ
 
 date: 2024-08-12
-permalink: "https://blog.1xtelescope.com/posts/01-DAW2BPM.html"
+permalink: "https://blog.1xtelescope.com/posts/01-BPMfromDAW.html"
 
 prev: false
 next: false
@@ -65,8 +65,8 @@ DAWによってはMIDIタイムコードという内部データ的なものを�
 ほとんど同じ仕組みで、MIDIUSBライブラリじゃなく[Control Surfaceライブラリ](https://github.com/tttapa/Control-Surface.git "Control Surface")を使って書くこともできました。Control Surfaceはめちゃくちゃ便利な神ライブラリです。
 
 ::: code-group
-<<< @/snippets/01-MIDIUSB.ino{cpp} [MIDIUSB ver.]
-<<< @/snippets/01-Control-Surface.ino{cpp} [Control-Surface ver.]
+<<< @/snippets/2024/01-MIDIUSB.ino{cpp} [MIDIUSB ver.]
+<<< @/snippets/2024/01-Control-Surface.ino{cpp} [Control-Surface ver.]
 :::
 
 Control Surface版は動作の最中にArduino IDEのシリアルモニタを開閉すると何故か停止しますが、実際の使用状況ではそもそもIDEを開かないのでヨシ！としています。とは言えあまり健全ではないので、~~ゆるゆると原因調査中です~~諦めました！
