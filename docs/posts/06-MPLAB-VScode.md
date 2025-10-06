@@ -105,8 +105,8 @@ C/C++を触ったことがある方の多くが、Microsoft製の「C/C++」な�
 プロジェクト名の通り、LEDをチカチカさせます。
 
 ::: code-group
-<<< @/snippets/06-main.c{c} [main.c]
-<<< @/snippets/06-header.h{c} [header.h]
+<<< @/snippets/2025/06-main.c{c} [main.c]
+<<< @/snippets/2025/06-header.h{c} [header.h]
 :::
 
 ## コンパイル
