@@ -117,7 +117,7 @@ BibLaTeXはBibTeXより新しく便利な部分もあるものの、日本語へ
 
 ## 本文
 
-:::details おそらくlatexmkrcも必要
+::: details おそらくlatexmkrcも必要
 
 ```perl
 #!/usr/bin/env perl
