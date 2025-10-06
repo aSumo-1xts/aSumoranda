@@ -37,9 +37,44 @@ TODO: 画像
 | ストレージ | C: Samsung PM9A1 1TB <br/> D: Samsung PM9A1 1TB <br/> Linux: Samsung 980 PRO 1TB | |
 | CPUクーラー | DeepCool AK500 ZERO DARK | |
 | ケースファン | SYS_FAN1: hoge <br/> SYS_FAN2: <br/> SYS_FAN3: <br/> SYS_FAN4: | 天面 <br/> 背面 <br/> 底面 <br/> 側面 |
+| アクリルスタンド | 『シメジシミュレーション』<br/> 庭師 | 健気で好き |
 
 ## Windows 11
 
 今回のような大きめの機会にはクリーンインストールしたいので、wingetでインストールできるアプリは[UniGetUI](https://github.com/marticliment/UniGetUI.git)で管理して、そうでないアプリはローカルでちまちまインストールします。かつてほどDTMをやらなくなり、ライセンス移行を要するものが少なくなったので何とかなっています。
 
+::: details winget一括実行スクリプト
+
+::: code-group
+<<< @/snippets/2025/07-myWinget.ps1{powershell} [myWinget.ps1]
+:::
+
+クリーンインストールの際には[tiny11builder](https://github.com/ntdevlabs/tiny11builder.git)で不要なデフォルトアプリを悉く削除しておきました。Edgeが消えてちょっと感動！
+
 ## Linux - Debian 13
+
+これまでWSL2を開いている時間がかなり長かったので、思い切ってデュアルブートしました。
+
+KDE Plasma
+
+### zsh
+
+TODO: zsh各種設定
+
+### ツール
+
+.zshrc
+
+#### alias
+
+スニペット
+
+## OS間で共通の設定
+
+### Starship
+
+aa
+
+## おわりに
+
+あ
