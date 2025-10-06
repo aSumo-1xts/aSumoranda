@@ -44,7 +44,7 @@ tags:
 
 <ImageGroup
   :sources="[
-    '/images/06-01.webp',
+    '/images/2025/06-01.webp',
   ]"
   type="big"
   caption="今回の記事で最低限必要なものだけにチェックを入れた状態"
@@ -82,8 +82,8 @@ tags:
 
 <ImageGroup
   :sources="[
-    '/images/06-02.webp',
-    '/images/06-03.webp',
+    '/images/2025/06-02.webp',
+    '/images/2025/06-03.webp',
   ]"
   type="double"
   caption="← 黄色く囲ったバナーが「新しいプロジェクト」 | プロジェクト用ディレクトリの内部 →"
@@ -94,7 +94,7 @@ C/C++を触ったことがある方の多くが、Microsoft製の「C/C++」な�
 
 <ImageGroup
   :sources="[
-    '/images/06-04.webp',
+    '/images/2025/06-04.webp',
   ]"
   type="big"
 />
@@ -115,7 +115,7 @@ VScode上のコマンドパレット（`F1`キー）から「MPLAB」と入力�
 
 <ImageGroup
   :sources="[
-    '/images/06-05.webp',
+    '/images/2025/06-05.webp',
   ]"
   type="big"
 />
@@ -134,8 +134,8 @@ VScode上のコマンドパレット（`F1`キー）から「MPLAB」と入力�
 
 <ImageGroup
   :sources="[
-    '/images/06-06.webp',
-    '/images/06-07.webp'
+    '/images/2025/06-06.webp',
+    '/images/2025/06-07.webp'
   ]"
   type="double"
   caption="筆者は剥き身で使っています。アダプターを自作してかなり便利になりました。"
@@ -207,8 +207,8 @@ Operation Succeeded
 
 <ImageGroup
   :sources="[
-    '/images/06-08.webp',
-    '/images/06-09.webp',
+    '/images/2025/06-08.webp',
+    '/images/2025/06-09.webp',
   ]"
   type="double"
   caption="← 「新しいプロジェクト」 | 「既存のフォルダ」 →"
@@ -277,7 +277,7 @@ NormalTrueBypass.
 
 <ImageGroup
   :sources="[
-    '/images/06-10.webp'
+    '/images/2025/06-10.webp'
   ]"
   type="big"
   caption="おかえりなさい！629にする？675にする？それとも…"
