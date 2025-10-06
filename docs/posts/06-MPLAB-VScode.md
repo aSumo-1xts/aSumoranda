@@ -146,7 +146,7 @@ VScode上のコマンドパレット（`F1`キー）から「MPLAB」と入力�
 MPLAB X IPEを立ち上げてGUIで書き込んでも良いのですが、このIPEにはコマンドラインで使える書き込み用のexeファイルが付属しています。`C:\Program Files\Microchip\MPLABX\v6.20\mplab_platform\mplab_ipe`に`ipecmd.exe`なるexeファイルがあることを確認してください。これを下記のコマンドでVScode上のターミナルから呼び出せば、VScodeに張り付いたまま書き込み作業まで完結できます。
 
 ::: code-group
-<<< @/snippets/06-writehex.ps1{powershell} [writehex.ps1]
+<<< @/snippets/2025/06-writeHex.ps1{powershell} [writeHex.ps1]
 :::
 
 長いので筆者はps1ファイルとして実行しています。見ての通り、マイコンやライターに応じて`-P12F675`や`-TPPK3`のオプションを変更すれば良いです。ファイル内で改行すると正しいはずなのに何故か怒られてしまうのが目下の不思議です。
